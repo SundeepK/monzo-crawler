@@ -1,5 +1,5 @@
-import com.monzo.crawler.Crawler;
-import com.monzo.crawler.OnSiteCrawled;
+package com.monzo.crawler;
+
 import com.monzo.crawler.sitemap.SiteMap;
 import com.monzo.crawler.sitemap.SiteMapGeneratorFactory;
 import okhttp3.HttpUrl;
