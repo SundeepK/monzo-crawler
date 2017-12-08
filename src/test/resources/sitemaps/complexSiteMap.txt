@@ -1,0 +1,10 @@
+monzo
+├── blog
+│   └── news
+│       ├── news2
+│       │   ├── sub item1
+│       │   └── sub item2
+│       └── item2
+│           └── item2 sub node
+└── contacts
+    └── sub contacts node
