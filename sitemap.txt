@@ -113,10 +113,10 @@ monzo
 │   │   │   └── 20
 │   │   │       └── crowdfunding-in-numbers
 │   │   ├── 05
-│   │   │   ├── 22
-│   │   │   │   └── top-up-with-android-pay
 │   │   │   ├── 11
 │   │   │   │   └── api-update
+│   │   │   ├── 22
+│   │   │   │   └── top-up-with-android-pay
 │   │   │   ├── 03
 │   │   │   │   └── practical-machine-learning-for-startups
 │   │   │   ├── 26
@@ -155,10 +155,10 @@ monzo
 │   │   ├── 07
 │   │   │   ├── 13
 │   │   │   │   └── launching-monzo-university
-│   │   │   ├── 03
-│   │   │   │   └── monzo-mixtape
 │   │   │   ├── 25
 │   │   │   │   └── meet-will
+│   │   │   ├── 03
+│   │   │   │   └── monzo-mixtape
 │   │   │   ├── 04
 │   │   │   │   └── releasing-our-annual-report
 │   │   │   ├── 27
@@ -256,12 +256,12 @@ monzo
 │   │   ├── 02
 │   │   │   ├── 03
 │   │   │   │   └── mondo-api
-│   │   │   ├── 26
-│   │   │   │   └── 1000000
 │   │   │   ├── 15
 │   │   │   │   └── invest-in-mondo
 │   │   │   ├── 04
 │   │   │   │   └── marketplace-banking
+│   │   │   ├── 26
+│   │   │   │   └── 1000000
 │   │   │   ├── 29
 │   │   │   │   └── crowdfunding-paused
 │   │   │   └── 09
@@ -325,10 +325,10 @@ monzo
 │   │   │   │   └── how-we-picked-monzo
 │   │   │   ├── 15
 │   │   │   │   └── launching-the-bank
-│   │   │   ├── 05
-│   │   │   │   └── spending-on-mondo-update
 │   │   │   ├── 16
 │   │   │   │   └── travel-reports
+│   │   │   ├── 05
+│   │   │   │   └── spending-on-mondo-update
 │   │   │   └── 08
 │   │   │       └── updated-design
 │   │   ├── 09
@@ -338,10 +338,10 @@ monzo
 │   │   │   │   └── 1-6-3
 │   │   │   ├── 26
 │   │   │   │   └── send-10-to-siri
-│   │   │   ├── 07
-│   │   │   │   └── our-approach-to-overdrafts
 │   │   │   ├── 29
 │   │   │   │   └── android
+│   │   │   ├── 07
+│   │   │   │   └── our-approach-to-overdrafts
 │   │   │   ├── 19
 │   │   │   │   └── building-a-modern-bank-backend
 │   │   │   └── 20
@@ -425,8 +425,8 @@ monzo
 │       ├── yehudi-asamoah
 │       ├── dimitri-masin
 │       ├── sam-michael
-│       ├── paul-rippon
 │       ├── kieran-leblanc
+│       ├── paul-rippon
 │       ├── naji-esiri
 │       ├── jami-welch
 │       ├── daniel-chatfield
