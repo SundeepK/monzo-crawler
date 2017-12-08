@@ -28,6 +28,14 @@ task crawlMonzo(type: JavaExec) {
     main = 'com.monzo.crawler.MonzoCrawlerMain'
 }
 
+sourceSets {
+    test {
+        java {
+            srcDirs = ["src/test"]  // Note @Peter's comment below
+        }
+    }
+}
+
 dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
     compile 'org.jsoup:jsoup:1.11.2'
