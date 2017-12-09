@@ -13,8 +13,9 @@ public class MonzoCrawlerMain {
     public static void main(String[] args) throws IOException {
         final Crawler crawler = new Crawler(new OkHttpClient(), Executors.newFixedThreadPool(20), HttpUrl.parse("https://monzo.com/"));
         final SiteMap siteMap = new SiteMap(new SiteMapGeneratorFactory(), "monzo");
+        final UrlConsumer urlConsumer = new UrlConsumer(siteMap);
         crawler.produceUrls()
-                .subscribe(new UrlConsumer(siteMap));
+                .subscribe(urlConsumer);
 
     }
 
