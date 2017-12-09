@@ -1,5 +1,8 @@
 # Monzo crawler
 
+### Requirements
+1. Java 8
+
 ### Build project and run tests
 ```
 $ ./gradlew build
