@@ -6,18 +6,22 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import okhttp3.HttpUrl;
 
+import java.util.concurrent.TimeUnit;
 
-public class OnSiteCrawled implements Observer<HttpUrl> {
+
+public class UrlConsumer implements Observer<HttpUrl> {
 
     private final SiteMap siteMap;
     private final SiteMapFileCreator siteMapFileCreator = new SiteMapFileCreator();
+    private long time;
 
-    public OnSiteCrawled(SiteMap siteMap){
+    public UrlConsumer(SiteMap siteMap){
         this.siteMap = siteMap;
     }
 
     @Override
     public void onSubscribe(Disposable d) {
+        time = System.currentTimeMillis();
     }
 
     @Override
@@ -27,7 +31,6 @@ public class OnSiteCrawled implements Observer<HttpUrl> {
 
     @Override
     public void onError(Throwable e) {
-
     }
 
     @Override
@@ -35,5 +38,7 @@ public class OnSiteCrawled implements Observer<HttpUrl> {
         String siteMap = this.siteMap.createSiteMap();
         siteMapFileCreator.createSiteMapFile(siteMap);
         System.out.println(siteMap);
+        long timeInSecs = TimeUnit.SECONDS.convert(System.currentTimeMillis() - time, TimeUnit.MILLISECONDS);
+        System.out.println("Time taken " + timeInSecs + "s");
     }
 }
