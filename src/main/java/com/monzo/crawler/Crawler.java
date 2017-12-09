@@ -25,8 +25,8 @@ public class Crawler {
 
     private Observable<HttpUrl> crawl(HttpUrl originalUrl) {
         return Observable.create((ObservableEmitter<HttpUrl> subscriber) -> {
-            UrlProvider urlProvider = new UrlProvider(subscriber, client, executorService);
-            urlProvider.provideurls(originalUrl);
+            UrlProvider urlProvider = new UrlProvider(subscriber, new WebPageCrawler(new OkHttpClient(), originalUrl.host()), executorService);
+            urlProvider.provideUrl(originalUrl);
         });
     }
 

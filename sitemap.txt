@@ -65,10 +65,10 @@ monzo
 │   │   │   ├── 22
 │   │   │   │   ├── josh-profile
 │   │   │   │   └── 1-9-3-update
-│   │   │   ├── 23
-│   │   │   │   └── fundraising-announcement
 │   │   │   ├── 01
 │   │   │   │   └── natasha-profile
+│   │   │   ├── 23
+│   │   │   │   └── fundraising-announcement
 │   │   │   ├── 24
 │   │   │   │   ├── monzome-on-android
 │   │   │   │   └── cloudbleed
@@ -91,10 +91,10 @@ monzo
 │   │   │   │   └── 1-5-3-update
 │   │   │   ├── 05
 │   │   │   │   └── outage
-│   │   │   ├── 28
-│   │   │   │   └── i-forgot-my-pin
 │   │   │   ├── 06
 │   │   │   │   └── transparency-dashboard
+│   │   │   ├── 28
+│   │   │   │   └── i-forgot-my-pin
 │   │   │   ├── 09
 │   │   │   │   ├── emma-profile
 │   │   │   │   └── diversity-and-inclusion
@@ -133,10 +133,10 @@ monzo
 │   │   │   │   └── meet-tapas
 │   │   │   ├── 18
 │   │   │   │   └── night-cops
-│   │   │   ├── 19
-│   │   │   │   └── future-of-cops
 │   │   │   ├── 08
 │   │   │   │   └── android-pay-on-monzome
+│   │   │   ├── 19
+│   │   │   │   └── future-of-cops
 │   │   │   └── 31
 │   │   │       └── women-in-finance
 │   │   ├── 06
@@ -157,10 +157,10 @@ monzo
 │   │   ├── 07
 │   │   │   ├── 13
 │   │   │   │   └── launching-monzo-university
-│   │   │   ├── 03
-│   │   │   │   └── monzo-mixtape
 │   │   │   ├── 25
 │   │   │   │   └── meet-will
+│   │   │   ├── 03
+│   │   │   │   └── monzo-mixtape
 │   │   │   ├── 04
 │   │   │   │   └── releasing-our-annual-report
 │   │   │   ├── 27
@@ -229,19 +229,6 @@ monzo
 │   │   │   │   └── living-wage
 │   │   │   └── 30
 │   │   │       └── laying-the-foundation-for-a-data-team
-│   │   ├── 12
-│   │   │   ├── 12
-│   │   │   │   └── christmas-faqs
-│   │   │   ├── 05
-│   │   │   │   └── old-street-shopping-event
-│   │   │   ├── 06
-│   │   │   │   └── payments-android
-│   │   │   ├── 07
-│   │   │   │   └── monzo-me
-│   │   │   ├── 08
-│   │   │   │   └── our-old-street-shopping-guide
-│   │   │   └── 21
-│   │   │       └── monzo-for-alexa
 │   │   ├── 01
 │   │   │   ├── 22
 │   │   │   │   └── introducing-your-spending
@@ -255,6 +242,19 @@ monzo
 │   │   │   │   └── how-does-the-wholesale-foreign-exchange-market-work
 │   │   │   └── 20
 │   │   │       └── how-do-bank-payments-work
+│   │   ├── 12
+│   │   │   ├── 12
+│   │   │   │   └── christmas-faqs
+│   │   │   ├── 05
+│   │   │   │   └── old-street-shopping-event
+│   │   │   ├── 06
+│   │   │   │   └── payments-android
+│   │   │   ├── 07
+│   │   │   │   └── monzo-me
+│   │   │   ├── 08
+│   │   │   │   └── our-old-street-shopping-guide
+│   │   │   └── 21
+│   │   │       └── monzo-for-alexa
 │   │   ├── 02
 │   │   │   ├── 03
 │   │   │   │   └── mondo-api
@@ -414,11 +414,11 @@ monzo
 │       ├── valerio-magliulo
 │       ├── natasha-vernier
 │       ├── oliver-beattie
-│       ├── phil-hewinson
 │       ├── team-monzo
+│       ├── phil-hewinson
 │       ├── richard-dingwall
-│       ├── simon-balmain
 │       ├── zander-brade
+│       ├── simon-balmain
 │       ├── tom-blomfield
 │       ├── priscila-minks-zanuzzo
 │       ├── james-nicholson
@@ -440,14 +440,14 @@ monzo
 │       ├── tracy-abraham
 │       ├── josh-garnham
 │       ├── beth-toms
-│       ├── nigel-
 │       ├── beatrice-borbon
-│       ├── daniel-cannon
+│       ├── nigel-
 │       ├── bobbi-nicholson
+│       ├── daniel-cannon
 │       ├── maria-campbell
 │       ├── venkat-srinivasan
-│       ├── stuart-mcfadden
 │       ├── gemma-rogers
+│       ├── stuart-mcfadden
 │       └── filipe-varela
 ├── ethics
 ├── cookies
