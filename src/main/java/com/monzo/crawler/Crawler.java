@@ -5,17 +5,17 @@ import io.reactivex.ObservableEmitter;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 
-import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Crawler {
 
     private final OkHttpClient client;
-    private final ExecutorService executorService;
+    private final int threads;
     private final HttpUrl originalUrl;
 
-    public Crawler(OkHttpClient client, ExecutorService executorService, HttpUrl originalUrl){
+    public Crawler(OkHttpClient client, int threads, HttpUrl originalUrl){
         this.client = client;
-        this.executorService = executorService;
+        this.threads = threads;
         this.originalUrl = originalUrl;
     }
 
@@ -25,7 +25,7 @@ public class Crawler {
 
     private Observable<HttpUrl> crawl(HttpUrl originalUrl) {
         return Observable.create((ObservableEmitter<HttpUrl> subscriber) -> {
-            UrlProvider urlProvider = new UrlProvider(subscriber, new WebPageCrawler(new OkHttpClient(), originalUrl.host()), executorService);
+            UrlProvider urlProvider = new UrlProvider(subscriber, new WebPageCrawler(client, originalUrl.host()), Executors.newFixedThreadPool(threads));
             urlProvider.provideUrl(originalUrl);
         });
     }
