@@ -6,10 +6,8 @@ import java.io.PrintWriter;
 public class SiteMapFileCreator {
 
     public void createSiteMapFile(String sitemap){
-        try {
-            try(PrintWriter out = new PrintWriter(System.getProperty("user.dir") + "/sitemap.txt")){
-                out.println(sitemap);
-            }
+        try(PrintWriter out = new PrintWriter(System.getProperty("user.dir") + "/sitemap.txt")) {
+            out.println(sitemap);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
