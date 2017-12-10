@@ -1,10 +1,7 @@
 package com.monzo.crawler;
 
 import io.reactivex.Observable;
-import okhttp3.HttpUrl;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
+import okhttp3.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -29,8 +26,11 @@ public class WebPageCrawler {
             try {
                 Request request = request(url);
                 Response response = client.newCall(request).execute();
-                Document document = Jsoup.parse(response.body().string());
-                processHrefsOnDoc(response, document, consumer);
+                ResponseBody body = response.body();
+                if (body != null) {
+                    Document document = Jsoup.parse(body.string());
+                    processHrefsOnDoc(response, document, consumer);
+                }
                 subscriber.onComplete();
             } catch (IOException e) {
                 subscriber.onError(e);
