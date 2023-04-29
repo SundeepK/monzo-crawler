@@ -1,490 +1,3119 @@
 monzo
-├── shop
-├── university
-│   ├── debt-advice
-│   ├── chargeback-money-back
-│   ├── credit-score
-│   ├── lost-or-stolen-bank-card
-│   ├── money-mules
-│   └── card-payments
-├── current-account
-│   └── live
-├── campus-insiders
-├── invest
+├── -deeplinks
+│   ├── add_money
+│   ├── add_salary
+│   ├── add_salary_email
+│   ├── borrowing_hub
+│   ├── business_account_signup
+│   ├── business_external_lending
+│   ├── cass
+│   ├── create-pot
+│   ├── create_pot
+│   │   ├── index.html
+│   │   └── savings
+│   ├── create_savings_pot
+│   ├── flex_start_application
+│   ├── home
+│   ├── invite
+│   ├── loan-application
+│   ├── loans
+│   ├── overdrafts
+│   ├── paid
+│   ├── premium_signup
+│   ├── smallchange-addsalary
+│   ├── smallchange-pots
+│   ├── smallchange-scheduledpayments
+│   ├── smallchange-sharedtab
+│   ├── smallchange-targets
+│   ├── support
+│   ├── trends-personal-uk-targets
+│   ├── trends-personal-usa-balance
+│   ├── trends-personal-usa-spending
+│   └── year-in-monzo
+├── -webviews
+│   └── content
+│       └── p2p
+│           └── ios
 ├── about
-├── privacy
-├── blog
-│   ├── mondo-hq
+├── accessibility
+├── annual-report
 │   ├── 2017
+│   ├── 2018
+│   ├── 2019
+│   ├── 2020
+│   ├── 2021
+│   └── 2022
+├── blog
+│   ├── 10
+│   ├── 10-magical-monzo-features
+│   ├── 10-things-they-didnt-teach-you-about-money-in-school
+│   ├── 10-times-you-hated-monzo
+│   ├── 11
+│   ├── 11-reasons-to-get-monzo-business
+│   ├── 12
+│   ├── 12-essential-interview-questions-to-help-find-your-next-hire
+│   ├── 13
+│   ├── 14
+│   ├── 15
+│   ├── 16
+│   ├── 17
+│   ├── 18
+│   ├── 19
+│   ├── 1p-savings-challenge-2020
+│   ├── 1p-savings-challenge-2021
+│   ├── 2
+│   ├── 20
+│   ├── 2002
+│   │   └── 10
+│   │       └── 22
+│   │           └── our-new-metal-card
+│   ├── 2015
+│   │   ├── 06
+│   │   │   └── 01
+│   │   │       └── welcome-to-mondo
+│   │   ├── 07
+│   │   │   └── 03
+│   │   │       └── challenge-session
+│   │   ├── 10
+│   │   │   ├── 01
+│   │   │   │   └── the-first-mondo-hackathon
+│   │   │   ├── 22
+│   │   │   │   └── the-hidden-costs-of-free-banking
+│   │   │   └── 30
+│   │   │       └── we-are-ready
 │   │   ├── 11
-│   │   │   ├── 23
-│   │   │   │   └── 2017-todo-list
-│   │   │   ├── 14
-│   │   │   │   └── nfc-card-activation
-│   │   │   ├── 03
-│   │   │   │   └── simple-signup-KYC
-│   │   │   ├── 16
-│   │   │   │   └── monzo-marketplace
-│   │   │   ├── 29
-│   │   │   │   └── very-robust-etcd
-│   │   │   ├── 07
-│   │   │   │   └── investment-announcement
+│   │   │   └── 16
+│   │   │       └── diversity-debt
+│   │   └── 12
+│   │       ├── 02
+│   │       │   └── 3-second-sandwich
+│   │       └── 15
+│   │           └── why-are-foreign-card-payments-such-a-mess
+│   ├── 2016
+│   │   ├── 01
+│   │   │   ├── 08
+│   │   │   │   └── how-does-the-wholesale-foreign-exchange-market-work
 │   │   │   └── 20
-│   │   │       ├── pots
-│   │   │       └── share-options
+│   │   │       └── how-do-bank-payments-work
+│   │   ├── 02
+│   │   │   ├── 04
+│   │   │   │   └── marketplace-banking
+│   │   │   └── 09
+│   │   │       └── meet-leah
+│   │   ├── 03
+│   │   │   ├── 03
+│   │   │   │   └── crowdfunded
+│   │   │   ├── 10
+│   │   │   │   └── meet-jonas
+│   │   │   └── 17
+│   │   │       └── beta
+│   │   ├── 04
+│   │   │   ├── 08
+│   │   │   │   └── meet-hugo
+│   │   │   ├── 11
+│   │   │   │   └── crowdsourcing-merchant-data
+│   │   │   ├── 21
+│   │   │   │   └── mondohack-iv
+│   │   │   └── 29
+│   │   │       └── mondo-spending
+│   │   ├── 05
+│   │   │   ├── 25
+│   │   │   │   └── android-v1
+│   │   │   └── 27
+│   │   │       └── transparent-product-roadmap
+│   │   ├── 06
+│   │   │   ├── 03
+│   │   │   │   └── ask-us-anything-join-the-forum
+│   │   │   ├── 07
+│   │   │   │   └── ethical-banking
+│   │   │   ├── 13
+│   │   │   │   ├── 1-5
+│   │   │   │   └── new-mondo-changing-our-name
+│   │   │   └── 23
+│   │   │       └── update-on-our-name-change
+│   │   ├── 07
+│   │   │   ├── 08
+│   │   │   │   └── where-in-the-world-has-mondo-been
+│   │   │   ├── 18
+│   │   │   │   └── touchid-profile-update
+│   │   │   └── 22
+│   │   │       └── name-change-update-snapchat
+│   │   ├── 08
+│   │   │   ├── 05
+│   │   │   │   └── spending-on-mondo-update
+│   │   │   ├── 08
+│   │   │   │   └── updated-design
+│   │   │   ├── 11
+│   │   │   │   └── we-are-now-a-bank
+│   │   │   ├── 15
+│   │   │   │   └── launching-the-bank
+│   │   │   ├── 16
+│   │   │   │   └── travel-reports
+│   │   │   ├── 25
+│   │   │   │   └── monzo
+│   │   │   └── 26
+│   │   │       └── how-we-picked-monzo
+│   │   ├── 09
+│   │   │   ├── 07
+│   │   │   │   └── our-approach-to-overdrafts
+│   │   │   ├── 12
+│   │   │   │   └── 1-6-3
+│   │   │   ├── 19
+│   │   │   │   └── building-a-modern-bank-backend
+│   │   │   ├── 20
+│   │   │   │   └── monzo-journals-philippines
+│   │   │   └── 29
+│   │   │       └── android
+│   │   ├── 10
+│   │   │   ├── 03
+│   │   │   │   └── targets
+│   │   │   ├── 10
+│   │   │   │   └── android-1-1-update
+│   │   │   ├── 19
+│   │   │   │   └── target-practice
+│   │   │   └── 26
+│   │   │       └── card-replacement-android
+│   │   ├── 11
+│   │   │   ├── 04
+│   │   │   │   └── living-wage
+│   │   │   ├── 14
+│   │   │   │   └── spending-android
+│   │   │   └── 30
+│   │   │       └── laying-the-foundation-for-a-data-team
+│   │   └── 12
+│   │       ├── 06
+│   │       │   └── payments-android
+│   │       └── 07
+│   │           └── monzo-me
+│   ├── 2017
 │   │   ├── 01
 │   │   │   ├── 11
 │   │   │   │   └── customer-support-quotables
-│   │   │   ├── 13
-│   │   │   │   └── monzo-extraordinary-ideas-board
+│   │   │   ├── 16
+│   │   │   │   └── app-shortcuts-android
 │   │   │   ├── 24
 │   │   │   │   └── 100000th-user
-│   │   │   ├── 03
-│   │   │   │   └── pin-in-app
 │   │   │   ├── 26
 │   │   │   │   └── our-new-community-page
 │   │   │   ├── 27
 │   │   │   │   └── designing-product-mental-health-mind
-│   │   │   ├── 16
-│   │   │   │   └── app-shortcuts-android
-│   │   │   ├── 06
-│   │   │   │   └── year-in-numbers
 │   │   │   └── 31
 │   │   │       └── fincrime-and-security-week-introduction
-│   │   ├── 12
-│   │   │   ├── 01
-│   │   │   │   ├── top-ups-are-back
-│   │   │   │   └── cardiff
-│   │   │   ├── 06
-│   │   │   │   └── upgrades-for-all
-│   │   │   ├── 07
-│   │   │   │   └── pots-android
-│   │   │   └── 08
-│   │   │       └── monzo-mixtape-two
 │   │   ├── 02
-│   │   │   ├── 22
-│   │   │   │   ├── josh-profile
-│   │   │   │   └── 1-9-3-update
 │   │   │   ├── 01
 │   │   │   │   └── natasha-profile
-│   │   │   ├── 23
-│   │   │   │   └── fundraising-announcement
-│   │   │   ├── 24
-│   │   │   │   ├── monzome-on-android
-│   │   │   │   └── cloudbleed
 │   │   │   ├── 03
 │   │   │   │   └── fighting-fraud-with-machine-learning
-│   │   │   ├── 16
-│   │   │   │   └── the-richest-man-in-babylon
-│   │   │   ├── 28
-│   │   │   │   └── crowdfunding
 │   │   │   ├── 08
 │   │   │   │   └── meet-irina
-│   │   │   └── 09
-│   │   │       └── launching-settings-android
-│   │   ├── 03
+│   │   │   ├── 09
+│   │   │   │   ├── customer-support-quotables-short
+│   │   │   │   └── launching-settings-android
+│   │   │   ├── 13
+│   │   │   │   └── 5-features-your-mobile-bank-account-should-have-by-now
+│   │   │   ├── 16
+│   │   │   │   └── the-richest-man-in-babylon
+│   │   │   ├── 17
+│   │   │   │   └── four-useful-services-your-bank-should-not-be-charging-for
 │   │   │   ├── 22
-│   │   │   │   └── meet-venkat
-│   │   │   ├── 14
-│   │   │   │   └── 12000000
-│   │   │   ├── 15
-│   │   │   │   └── 1-5-3-update
+│   │   │   │   ├── 1-9-3-update
+│   │   │   │   └── josh-profile
+│   │   │   ├── 23
+│   │   │   │   └── fundraising-announcement
+│   │   │   └── 24
+│   │   │       ├── cloudbleed
+│   │   │       └── monzome-on-android
+│   │   ├── 03
 │   │   │   ├── 05
 │   │   │   │   └── outage
 │   │   │   ├── 06
 │   │   │   │   └── transparency-dashboard
+│   │   │   ├── 09
+│   │   │   │   ├── diversity-and-inclusion
+│   │   │   │   └── emma-profile
+│   │   │   ├── 10
+│   │   │   │   └── transparent-by-default
+│   │   │   ├── 14
+│   │   │   │   └── 12000000
+│   │   │   ├── 22
+│   │   │   │   └── meet-venkat
 │   │   │   ├── 28
 │   │   │   │   └── i-forgot-my-pin
-│   │   │   ├── 09
-│   │   │   │   ├── emma-profile
-│   │   │   │   └── diversity-and-inclusion
-│   │   │   ├── 31
-│   │   │   │   └── designers-inspiration
-│   │   │   └── 10
-│   │   │       └── transparent-by-default
+│   │   │   └── 31
+│   │   │       ├── budget-targets
+│   │   │       └── designers-inspiration
 │   │   ├── 04
-│   │   │   ├── 11
-│   │   │   │   └── search-on-android
-│   │   │   ├── 27
-│   │   │   │   └── welcome-to-the-drawing-board
 │   │   │   ├── 05
-│   │   │   │   ├── profile-pictures-update
-│   │   │   │   └── banking-licence
+│   │   │   │   ├── banking-licence
+│   │   │   │   └── profile-pictures-update
 │   │   │   ├── 06
 │   │   │   │   └── meet-dan
-│   │   │   └── 20
-│   │   │       └── crowdfunding-in-numbers
-│   │   ├── 05
-│   │   │   ├── 22
-│   │   │   │   └── top-up-with-android-pay
 │   │   │   ├── 11
-│   │   │   │   └── api-update
+│   │   │   │   └── search-on-android
+│   │   │   ├── 20
+│   │   │   │   └── crowdfunding-in-numbers
+│   │   │   └── 27
+│   │   │       └── welcome-to-the-drawing-board
+│   │   ├── 05
 │   │   │   ├── 03
 │   │   │   │   └── practical-machine-learning-for-startups
-│   │   │   ├── 26
-│   │   │   │   └── to-a-billion-and-beyond
+│   │   │   ├── 05
+│   │   │   │   └── why-payments-are-declined
+│   │   │   ├── 08
+│   │   │   │   └── android-pay-on-monzome
+│   │   │   ├── 11
+│   │   │   │   └── api-update
 │   │   │   ├── 15
 │   │   │   │   └── intro-to-cops
 │   │   │   ├── 16
 │   │   │   │   └── 200k-250m
-│   │   │   ├── 05
-│   │   │   │   └── why-payments-are-declined
 │   │   │   ├── 17
 │   │   │   │   └── meet-tapas
 │   │   │   ├── 18
 │   │   │   │   └── night-cops
-│   │   │   ├── 08
-│   │   │   │   └── android-pay-on-monzome
 │   │   │   ├── 19
 │   │   │   │   └── future-of-cops
-│   │   │   └── 31
-│   │   │       └── women-in-finance
+│   │   │   └── 22
+│   │   │       └── top-up-with-android-pay
 │   │   ├── 06
-│   │   │   ├── 22
-│   │   │   │   └── meet-gary
-│   │   │   ├── 23
-│   │   │   │   └── new-beginnings-at-Monzo
-│   │   │   ├── 13
-│   │   │   │   └── identity-verification-upgrade
 │   │   │   ├── 07
 │   │   │   │   └── referral-bonus
 │   │   │   ├── 08
 │   │   │   │   └── host-a-monzo-meetup
 │   │   │   ├── 09
 │   │   │   │   └── journey-of-a-card
+│   │   │   ├── 13
+│   │   │   │   └── identity-verification-upgrade
+│   │   │   ├── 22
+│   │   │   │   └── meet-gary
+│   │   │   ├── 23
+│   │   │   │   └── new-beginnings-at-Monzo
 │   │   │   └── 30
 │   │   │       └── tried-and-tested
 │   │   ├── 07
-│   │   │   ├── 13
-│   │   │   │   └── launching-monzo-university
-│   │   │   ├── 25
-│   │   │   │   └── meet-will
 │   │   │   ├── 03
 │   │   │   │   └── monzo-mixtape
-│   │   │   ├── 04
-│   │   │   │   └── releasing-our-annual-report
-│   │   │   ├── 27
-│   │   │   │   └── monzo-insider
+│   │   │   ├── 07
+│   │   │   │   └── working-with-backend-services-on-ios
 │   │   │   ├── 17
 │   │   │   │   └── current-account-preview
 │   │   │   ├── 18
 │   │   │   │   └── new-help-search
-│   │   │   └── 07
-│   │   │       └── working-with-backend-services-on-ios
+│   │   │   ├── 25
+│   │   │   │   └── meet-will
+│   │   │   └── 27
+│   │   │       └── monzo-insider
 │   │   ├── 08
+│   │   │   ├── 01
+│   │   │   │   └── bottom-nav-bar
+│   │   │   ├── 07
+│   │   │   │   └── current-account-android
+│   │   │   ├── 09
+│   │   │   │   └── complaints-at-monzo
 │   │   │   ├── 22
 │   │   │   │   └── the-help-search-algorithm
 │   │   │   ├── 23
 │   │   │   │   └── preview-distance-signup
-│   │   │   ├── 01
-│   │   │   │   └── bottom-nav-bar
-│   │   │   │       └── (https:
-│   │   │   │           └── community.monzo.com)
-│   │   │   ├── 24
-│   │   │   │   └── overdraft-preview
-│   │   │   ├── 04
-│   │   │   │   └── apology-from-monzo
-│   │   │   ├── 07
-│   │   │   │   └── current-account-android
-│   │   │   └── 09
-│   │   │       └── complaints-at-monzo
+│   │   │   └── 24
+│   │   │       └── overdraft-preview
 │   │   ├── 09
 │   │   │   ├── 01
 │   │   │   │   └── open-office-august
-│   │   │   ├── 13
-│   │   │   │   └── atm-fees-abroad
-│   │   │   ├── 25
-│   │   │   │   └── android-progress-update
 │   │   │   ├── 04
 │   │   │   │   └── meet-phil-hewinson-head-of-partnerships
+│   │   │   ├── 25
+│   │   │   │   └── android-progress-update
 │   │   │   ├── 27
 │   │   │   │   └── android-help-search
-│   │   │   ├── 29
-│   │   │   │   └── android-engineers
-│   │   │   ├── 08
-│   │   │   │   └── monzo-x-deliveroo-split-the-bill
-│   │   │   └── 21
-│   │   │       └── testing-energy-partnerships
-│   │   └── 10
-│   │       ├── 24
-│   │       │   └── android-pay
-│   │       ├── 25
-│   │       │   └── current-account-update
-│   │       ├── 05
-│   │       │   └── card-delays
-│   │       ├── 17
-│   │       │   └── atm-limits-announcement
-│   │       ├── 30
-│   │       │   └── monzo-to-monzo-payments
-│   │       ├── 20
-│   │       │   └── code-club-monzo-meetup
-│   │       └── 10
-│   │           └── current-accounts-are-coming
-│   ├── 2016
-│   │   ├── 11
-│   │   │   ├── 14
-│   │   │   │   ├── monzo-with-friends
-│   │   │   │   └── spending-android
-│   │   │   ├── 04
-│   │   │   │   └── living-wage
+│   │   │   └── 29
+│   │   │       └── android-engineers
+│   │   ├── 10
+│   │   │   ├── 10
+│   │   │   │   └── current-accounts-are-coming
+│   │   │   ├── 17
+│   │   │   │   └── atm-limits-announcement
+│   │   │   ├── 24
+│   │   │   │   └── android-pay
+│   │   │   ├── 25
+│   │   │   │   └── current-account-update
 │   │   │   └── 30
-│   │   │       └── laying-the-foundation-for-a-data-team
-│   │   ├── 01
-│   │   │   ├── 22
-│   │   │   │   └── introducing-your-spending
-│   │   │   ├── 14
-│   │   │   │   └── alpha-update
-│   │   │   ├── 15
-│   │   │   │   └── the-bringmemondo-results
-│   │   │   ├── 28
-│   │   │   │   └── mondohack-III
-│   │   │   ├── 08
-│   │   │   │   └── how-does-the-wholesale-foreign-exchange-market-work
-│   │   │   └── 20
-│   │   │       └── how-do-bank-payments-work
-│   │   ├── 12
-│   │   │   ├── 12
-│   │   │   │   └── christmas-faqs
-│   │   │   ├── 05
-│   │   │   │   └── old-street-shopping-event
-│   │   │   ├── 06
-│   │   │   │   └── payments-android
-│   │   │   ├── 07
-│   │   │   │   └── monzo-me
-│   │   │   ├── 08
-│   │   │   │   └── our-old-street-shopping-guide
-│   │   │   └── 21
-│   │   │       └── monzo-for-alexa
-│   │   ├── 02
+│   │   │       └── monzo-to-monzo-payments
+│   │   ├── 11
 │   │   │   ├── 03
-│   │   │   │   └── mondo-api
+│   │   │   │   ├── simple-signup-KYC
+│   │   │   │   └── simple-signup-kyc
+│   │   │   ├── 14
+│   │   │   │   └── nfc-card-activation
+│   │   │   ├── 16
+│   │   │   │   └── monzo-marketplace
+│   │   │   ├── 20
+│   │   │   │   ├── pots
+│   │   │   │   └── share-options
+│   │   │   ├── 23
+│   │   │   │   └── 2017-todo-list
+│   │   │   └── 29
+│   │   │       └── very-robust-etcd
+│   │   └── 12
+│   │       ├── 01
+│   │       │   ├── cardiff
+│   │       │   └── top-ups-are-back
+│   │       ├── 06
+│   │       │   └── upgrades-for-all
+│   │       ├── 08
+│   │       │   └── monzo-mixtape-two
+│   │       ├── 12
+│   │       │   └── meet-jordan
+│   │       └── 18
+│   │           ├── using-monzo-over-christmas
+│   │           └── why-upgrade
+│   ├── 2018
+│   │   ├── 01
+│   │   │   ├── 10
+│   │   │   │   └── golden-tickets-are-back
+│   │   │   ├── 11
+│   │   │   │   └── 2018-plans
+│   │   │   ├── 12
+│   │   │   │   └── api-update
+│   │   │   ├── 18
+│   │   │   │   └── future-of-prepaid
+│   │   │   ├── 19
+│   │   │   │   └── beautiful-direct-debits
+│   │   │   ├── 23
+│   │   │   │   └── overdraft-update
+│   │   │   ├── 25
+│   │   │   │   └── bank-statements
 │   │   │   ├── 26
-│   │   │   │   └── 1000000
+│   │   │   │   └── upgrade-credit-score
+│   │   │   └── 31
+│   │   │       └── end-of-prepaid
+│   │   ├── 02
+│   │   │   ├── 01
+│   │   │   │   └── upgrade-bank-accounts
+│   │   │   ├── 02
+│   │   │   │   └── user-research
+│   │   │   ├── 06
+│   │   │   │   └── february-update
+│   │   │   ├── 07
+│   │   │   │   └── upgrade-overdrafts
+│   │   │   ├── 12
+│   │   │   │   └── monzo-me
+│   │   │   ├── 14
+│   │   │   │   └── android-pulse
 │   │   │   ├── 15
-│   │   │   │   └── invest-in-mondo
+│   │   │   │   └── android-crowdsourcing-merchant-data
+│   │   │   ├── 19
+│   │   │   │   └── third-birthday
+│   │   │   └── 28
+│   │   │       └── march-update
+│   │   ├── 03
+│   │   │   ├── 01
+│   │   │   │   └── marketplace-beta
+│   │   │   ├── 02
+│   │   │   │   └── app-development
+│   │   │   ├── 07
+│   │   │   │   └── coin-jar
+│   │   │   ├── 15
+│   │   │   │   └── fingerprint-unlock
+│   │   │   ├── 19
+│   │   │   │   └── 500k-customers
+│   │   │   ├── 20
+│   │   │   │   └── terms-and-conditions-monzo
+│   │   │   ├── 22
+│   │   │   │   └── diversity-and-inclusion
+│   │   │   └── 27
+│   │   │       └── tone-of-voice
+│   │   ├── 04
+│   │   │   ├── 03
+│   │   │   │   └── switch-to-monzo-current-account-switch-service
 │   │   │   ├── 04
-│   │   │   │   └── marketplace-banking
+│   │   │   │   └── ending-prepaid
+│   │   │   ├── 05
+│   │   │   │   ├── april-update
+│   │   │   │   └── how-monzo-to-monzo-payments-work
+│   │   │   ├── 09
+│   │   │   │   └── making-overdrafts-available
+│   │   │   ├── 12
+│   │   │   │   ├── gender-pay-gap
+│   │   │   │   └── transaction-tags
+│   │   │   ├── 18
+│   │   │   │   ├── payment-reactions
+│   │   │   │   └── using-a-monzo-overdraft
+│   │   │   ├── 24
+│   │   │   │   └── help-tab
+│   │   │   ├── 25
+│   │   │   │   └── switch-to-monzo
+│   │   │   ├── 27
+│   │   │   │   ├── backend-engineer-bonus
+│   │   │   │   └── introducing-monzo-labs
+│   │   │   └── 30
+│   │   │       └── switching-bank-accounts-overdraft
+│   │   ├── 05
+│   │   │   ├── 04
+│   │   │   │   └── may-update
+│   │   │   ├── 08
+│   │   │   │   └── nearby-friends
+│   │   │   ├── 09
+│   │   │   │   ├── new-categories
+│   │   │   │   └── sneak-peeks
+│   │   │   ├── 11
+│   │   │   │   └── coin-jar-update
+│   │   │   ├── 15
+│   │   │   │   └── meet-vulnerable-customers-team
+│   │   │   ├── 16
+│   │   │   │   ├── coral-crew
+│   │   │   │   └── gambling-self-exclusion
+│   │   │   ├── 17
+│   │   │   │   └── apple-pay-is-here
+│   │   │   ├── 18
+│   │   │   │   ├── mindfulness-and-wellbeing
+│   │   │   │   └── voluntary-disclosure
+│   │   │   ├── 21
+│   │   │   │   └── monzo-2.0-launch
+│   │   │   ├── 22
+│   │   │   │   ├── big-news-about-small-print
+│   │   │   │   └── making-monzo-better
+│   │   │   ├── 23
+│   │   │   │   └── monzo-2.0-summary-for-all
+│   │   │   ├── 24
+│   │   │   │   └── no-more-monzo-waiting-list
+│   │   │   ├── 25
+│   │   │   │   ├── improving-merchant-acceptance
+│   │   │   │   ├── just-landed
+│   │   │   │   └── monzo-2.0-events-roundup
 │   │   │   ├── 29
-│   │   │   │   └── crowdfunding-paused
-│   │   │   └── 09
-│   │   │       └── meet-leah
+│   │   │   │   ├── financial-inclusion
+│   │   │   │   └── getting-bank-account-immigrant
+│   │   │   └── 30
+│   │   │       └── getting-bank-account-refugee
+│   │   ├── 06
+│   │   │   ├── 01
+│   │   │   │   └── getting-bank-account-no-fixed-address
+│   │   │   ├── 04
+│   │   │   │   └── june-update
+│   │   │   ├── 05
+│   │   │   │   └── monzo-exchange-rate
+│   │   │   ├── 06
+│   │   │   │   └── android-updates-travel-reports
+│   │   │   ├── 07
+│   │   │   │   ├── is-monzo-a-bank
+│   │   │   │   ├── monzo-on-ifttt
+│   │   │   │   └── summary-update-predicting-committed-spending
+│   │   │   ├── 08
+│   │   │   │   └── adding-money-to-monzo
+│   │   │   ├── 11
+│   │   │   │   └── lost-or-stolen-card
+│   │   │   ├── 13
+│   │   │   │   ├── how-card-payments-work
+│   │   │   │   └── how-to-get-online-in-an-emergency
+│   │   │   ├── 14
+│   │   │   │   ├── bill-tracker
+│   │   │   │   └── what-is-open-banking
+│   │   │   ├── 19
+│   │   │   │   └── gambling-block-self-exclusion
+│   │   │   ├── 21
+│   │   │   │   └── paying-cheques-into-monzo
+│   │   │   ├── 22
+│   │   │   │   └── why-doesnt-monzo-have-branches
+│   │   │   ├── 25
+│   │   │   │   ├── monzo-international-transfers
+│   │   │   │   └── monzos-transparent-engineering-progression-framework
+│   │   │   ├── 26
+│   │   │   │   └── monzo-time
+│   │   │   ├── 27
+│   │   │   │   └── engineering-management-at-monzo
+│   │   │   ├── 28
+│   │   │   │   ├── joining-monzo-engineer-onboarding
+│   │   │   │   └── ticketmaster-breach
+│   │   │   └── 29
+│   │   │       ├── engineering-principles
+│   │   │       └── typeform-breach
+│   │   ├── 07
+│   │   │   ├── 02
+│   │   │   │   ├── publishing-our-2018-annual-report
+│   │   │   │   └── the-monzo-mission
+│   │   │   ├── 03
+│   │   │   │   ├── custom-app-icons
+│   │   │   │   └── the-big-list-update
+│   │   │   ├── 04
+│   │   │   │   └── making-recurring-payments-better
+│   │   │   ├── 05
+│   │   │   │   ├── fingerprint-pay-android
+│   │   │   │   ├── july-update
+│   │   │   │   └── set-a-spending-budget
+│   │   │   ├── 06
+│   │   │   │   └── celebrating-pride
+│   │   │   ├── 10
+│   │   │   │   └── making-quarterly-goals-public
+│   │   │   ├── 11
+│   │   │   │   └── working-towards-company-goals
+│   │   │   ├── 13
+│   │   │   │   └── joints-accounts-in-labs
+│   │   │   ├── 16
+│   │   │   │   └── schedule-payments-into-pots
+│   │   │   ├── 18
+│   │   │   │   ├── our-company-finances
+│   │   │   │   └── round-up-monzo-purchases-automatically
+│   │   │   ├── 19
+│   │   │   │   └── set-savings-goals
+│   │   │   ├── 24
+│   │   │   │   ├── receiving-international-payments
+│   │   │   │   └── what-is-sepa
+│   │   │   ├── 25
+│   │   │   │   └── monzo-reliability-report
+│   │   │   ├── 27
+│   │   │   │   └── how-we-monitor-monzo
+│   │   │   ├── 30
+│   │   │   │   └── scaling-our-customer-support
+│   │   │   └── 31
+│   │   │       └── monzo-las-vegas
+│   │   ├── 08
+│   │   │   ├── 01
+│   │   │   │   └── data-help
+│   │   │   ├── 02
+│   │   │   │   ├── pots-goals
+│   │   │   │   └── urgent-questions
+│   │   │   ├── 03
+│   │   │   │   ├── august-update
+│   │   │   │   ├── measuring-customer-happiness
+│   │   │   │   └── our-internal-product-vision
+│   │   │   ├── 06
+│   │   │   │   └── monzo-for-16-18-year-olds
+│   │   │   ├── 07
+│   │   │   │   ├── money-and-our-younger-selves
+│   │   │   │   └── understanding-how-young-people-manage-money
+│   │   │   ├── 08
+│   │   │   │   ├── better-credit-score
+│   │   │   │   ├── making-bills-easier-to-manage
+│   │   │   │   └── p60-p45-p11d-paye-forms
+│   │   │   ├── 09
+│   │   │   │   ├── things-to-consider-before-you-borrow-money
+│   │   │   │   ├── what-is-a-credit-score
+│   │   │   │   └── what-kind-of-credit-should-i-use
+│   │   │   ├── 10
+│   │   │   │   ├── earning-money-explained
+│   │   │   │   └── student-loans-explained
+│   │   │   ├── 13
+│   │   │   │   └── test-3d-secure
+│   │   │   ├── 14
+│   │   │   │   ├── launching-joint-accounts
+│   │   │   │   └── sharing-finances
+│   │   │   ├── 15
+│   │   │   │   ├── manage-your-bills-with-monzo
+│   │   │   │   └── split-the-bill
+│   │   │   ├── 16
+│   │   │   │   └── automate-your-finances
+│   │   │   ├── 17
+│   │   │   │   └── pin-lock-update
+│   │   │   ├── 21
+│   │   │   │   ├── budget-with-monzo
+│   │   │   │   └── savings-update
+│   │   │   ├── 22
+│   │   │   │   ├── end-of-the-big-list
+│   │   │   │   └── launching-3d-secure
+│   │   │   ├── 23
+│   │   │   │   ├── schedule-payments-out-of-pots
+│   │   │   │   └── seven-day-switch
+│   │   │   └── 30
+│   │   │       └── manage-your-bills
+│   │   ├── 09
+│   │   │   ├── 03
+│   │   │   │   └── is-monzo-free
+│   │   │   ├── 04
+│   │   │   │   ├── move-your-salary-to-monzo
+│   │   │   │   └── september-update
+│   │   │   ├── 05
+│   │   │   │   └── monzo-bank-statements
+│   │   │   ├── 06
+│   │   │   │   └── moving-monzo
+│   │   │   ├── 07
+│   │   │   │   ├── ba-data-breach
+│   │   │   │   └── open-a-uk-bank-account
+│   │   │   ├── 10
+│   │   │   │   └── renting-student-accommodation
+│   │   │   ├── 11
+│   │   │   │   └── student-budgeting-tips
+│   │   │   ├── 13
+│   │   │   │   └── student-loans-northern-ireland
+│   │   │   ├── 18
+│   │   │   │   └── ios-app-performance
+│   │   │   ├── 20
+│   │   │   │   └── on-call
+│   │   │   ├── 21
+│   │   │   │   └── protect-yourself-against-fraud-identity-theft
+│   │   │   ├── 24
+│   │   │   │   └── one-million-monzo-customers
+│   │   │   ├── 25
+│   │   │   │   └── share-with-us
+│   │   │   └── 26
+│   │   │       └── how-to-read-your-payslip
+│   │   ├── 10
+│   │   │   ├── 01
+│   │   │   │   └── october-update
+│   │   │   ├── 03
+│   │   │   │   └── q4-goals-public
+│   │   │   ├── 04
+│   │   │   │   └── guarantors-how-and-why
+│   │   │   ├── 05
+│   │   │   │   └── secured-unsecured-credit
+│   │   │   ├── 09
+│   │   │   │   └── bill-splitting
+│   │   │   ├── 11
+│   │   │   │   └── how-to-check-your-credit-score-report
+│   │   │   ├── 12
+│   │   │   │   └── what-is-a-good-credit-score
+│   │   │   ├── 16
+│   │   │   │   └── making-monzo-better
+│   │   │   ├── 18
+│   │   │   │   └── work-at-monzo
+│   │   │   ├── 22
+│   │   │   │   └── monzo-fscs-protection
+│   │   │   ├── 24
+│   │   │   │   └── types-of-savings-account
+│   │   │   ├── 25
+│   │   │   │   └── interest-explained
+│   │   │   ├── 30
+│   │   │   │   └── what-is-inflation
+│   │   │   └── 31
+│   │   │       └── big-news
+│   │   ├── 11
+│   │   │   ├── 01
+│   │   │   │   └── savings-pots
+│   │   │   ├── 02
+│   │   │   │   └── monzo-chat
+│   │   │   ├── 05
+│   │   │   │   ├── instant-apple-pay
+│   │   │   │   └── monzo-community
+│   │   │   ├── 06
+│   │   │   │   └── how-to-name-something
+│   │   │   ├── 07
+│   │   │   │   ├── making-monzo-roadmap
+│   │   │   │   └── pensions-explained
+│   │   │   ├── 08
+│   │   │   │   └── monzo-transparency
+│   │   │   ├── 09
+│   │   │   │   ├── employee-social-media-guidelines
+│   │   │   │   └── national-living-minimum-wage
+│   │   │   ├── 12
+│   │   │   │   └── november-update
+│   │   │   ├── 14
+│   │   │   │   └── isas-explained
+│   │   │   ├── 15
+│   │   │   │   └── card-controls
+│   │   │   ├── 19
+│   │   │   │   └── instant-google-pay
+│   │   │   ├── 20
+│   │   │   │   ├── flexible-budgeting
+│   │   │   │   ├── why-we-are-lending
+│   │   │   │   └── women-in-finance-update
+│   │   │   ├── 21
+│   │   │   │   └── deposit-cash
+│   │   │   ├── 22
+│   │   │   │   └── business-banking
+│   │   │   ├── 23
+│   │   │   │   ├── how-to-save-for-a-house-deposit
+│   │   │   │   └── what-is-crowdfunding
+│   │   │   ├── 26
+│   │   │   │   └── crowdfunding
+│   │   │   ├── 27
+│   │   │   │   └── how-to-save-for-retirement
+│   │   │   ├── 28
+│   │   │   │   └── how-to-save-for-a-wedding
+│   │   │   ├── 29
+│   │   │   │   └── refactoring-old-code
+│   │   │   └── 30
+│   │   │       ├── marriott-data-breach
+│   │   │       └── setting-record-straight
+│   │   └── 12
+│   │       ├── 05
+│   │       │   ├── crowdfunding-closes
+│   │       │   └── crowdfunding-starts
+│   │       ├── 06
+│   │       │   ├── crowdfunding-in-numbers
+│   │       │   └── find-your-saving-style
+│   │       ├── 10
+│   │       │   └── joint-pots
+│   │       ├── 11
+│   │       │   ├── christmas-gift
+│   │       │   ├── december-update
+│   │       │   ├── design-files-system
+│   │       │   └── las-vegas-office
+│   │       ├── 12
+│   │       │   └── christmas-shopping-sales
+│   │       ├── 13
+│   │       │   ├── locked-pots
+│   │       │   ├── shared-tabs
+│   │       │   └── throw-achristmas-party-on-a-budget
+│   │       ├── 14
+│   │       │   └── your-rights-returning-goods
+│   │       ├── 17
+│   │       │   └── customer-support
+│   │       ├── 18
+│   │       │   └── your-rights-flight-delays-cancellations
+│   │       ├── 20
+│   │       │   ├── how-to-get-therapy
+│   │       │   └── self-care-mental-health
+│   │       └── 21
+│   │           └── android-app-icons
+│   ├── 2019
+│   │   ├── 01
+│   │   │   ├── 04
+│   │   │   │   └── monzo-in-2019
+│   │   │   ├── 07
+│   │   │   │   └── progression
+│   │   │   ├── 08
+│   │   │   │   └── your-year-in-monzo
+│   │   │   ├── 09
+│   │   │   │   └── january-monthly-update
+│   │   │   ├── 14
+│   │   │   │   └── crowdfunding-technology-backend-architecture
+│   │   │   ├── 15
+│   │   │   │   └── crowdfunding-technology-testing
+│   │   │   ├── 16
+│   │   │   │   ├── crowdfunding-technology-systems
+│   │   │   │   └── monzo-plan-ahead
+│   │   │   ├── 17
+│   │   │   │   ├── 2018-year-in-monzo
+│   │   │   │   └── monzo-product-designer-jobs
+│   │   │   ├── 18
+│   │   │   │   └── how-to-budget
+│   │   │   ├── 21
+│   │   │   │   └── get-fit-on-a-budget
+│   │   │   ├── 22
+│   │   │   │   ├── how-to-manage-money-with-children
+│   │   │   │   └── how-to-save-money-on-train-travel
+│   │   │   ├── 28
+│   │   │   │   └── cashback
+│   │   │   ├── 29
+│   │   │   │   └── 2019-features
+│   │   │   ├── 30
+│   │   │   │   ├── cost-of-a-dog
+│   │   │   │   ├── mental-health
+│   │   │   │   ├── save-money-and-the-planet
+│   │   │   │   └── tell-your-friends-to-sign-up
+│   │   │   └── 31
+│   │   │       └── flux-monzo-launch
+│   │   ├── 02
+│   │   │   ├── 01
+│   │   │   │   └── bill-splitting
+│   │   │   ├── 04
+│   │   │   │   ├── giving-to-charity-when-youre-broke markdown
+│   │   │   │   └── pay-anyone-link
+│   │   │   ├── 05
+│   │   │   │   └── savings-pots-paused
+│   │   │   ├── 06
+│   │   │   │   ├── 50-20-30-budgeting
+│   │   │   │   ├── is-monzo-safe
+│   │   │   │   └── zero-sum-budgeting
+│   │   │   ├── 07
+│   │   │   │   ├── authorised-push-payment-fraud
+│   │   │   │   ├── building-progression-frameworks
+│   │   │   │   └── joint-account-switching
+│   │   │   ├── 11
+│   │   │   │   ├── building-monzo-chat-on-android
+│   │   │   │   ├── business-banking-alpha
+│   │   │   │   ├── internal-product-design
+│   │   │   │   └── user-research-analysis
+│   │   │   ├── 13
+│   │   │   │   └── february-monthly-update
+│   │   │   ├── 14
+│   │   │   │   ├── money-in-love-frank-charlotte
+│   │   │   │   └── saving-money-when-youre-broke
+│   │   │   ├── 19
+│   │   │   │   └── do-you-need-insurance
+│   │   │   ├── 21
+│   │   │   │   ├── dear-monzo
+│   │   │   │   ├── money-in-love-jen-dave
+│   │   │   │   └── piggy-bank-saving
+│   │   │   ├── 26
+│   │   │   │   └── 5-a-side-football
+│   │   │   └── 28
+│   │   │       └── money-in-nick-amy
 │   │   ├── 03
 │   │   │   ├── 03
-│   │   │   │   └── crowdfunded
-│   │   │   ├── 17
-│   │   │   │   └── beta
-│   │   │   └── 10
-│   │   │       └── meet-jonas
-│   │   ├── 04
-│   │   │   ├── 11
-│   │   │   │   └── crowdsourcing-merchant-data
-│   │   │   ├── 26
-│   │   │   │   └── automated-testing
-│   │   │   ├── 29
-│   │   │   │   └── mondo-spending
-│   │   │   ├── 08
-│   │   │   │   └── meet-hugo
-│   │   │   └── 21
-│   │   │       └── mondohack-iv
-│   │   ├── 05
-│   │   │   ├── 25
-│   │   │   │   └── android-v1
-│   │   │   ├── 27
-│   │   │   │   └── transparent-product-roadmap
-│   │   │   ├── 17
-│   │   │   │   └── dog-ate-my-card
-│   │   │   └── 09
-│   │   │       └── apple-love-release
-│   │   ├── 06
-│   │   │   ├── 23
-│   │   │   │   └── update-on-our-name-change
-│   │   │   ├── 01
-│   │   │   │   └── mondo-update-from-tom-in-96-seconds
-│   │   │   ├── 13
-│   │   │   │   ├── new-mondo-changing-our-name
-│   │   │   │   └── 1-5
-│   │   │   ├── 03
-│   │   │   │   └── ask-us-anything-join-the-forum
-│   │   │   └── 07
-│   │   │       └── ethical-banking
-│   │   ├── 07
-│   │   │   ├── 22
-│   │   │   │   └── name-change-update-snapchat
-│   │   │   ├── 01
-│   │   │   │   └── launching-campus-insiders
-│   │   │   ├── 06
-│   │   │   │   └── how-to-travel-with-mondo
-│   │   │   ├── 18
-│   │   │   │   └── touchid-profile-update
-│   │   │   └── 08
-│   │   │       └── where-in-the-world-has-mondo-been
-│   │   ├── 08
-│   │   │   ├── 11
-│   │   │   │   └── we-are-now-a-bank
-│   │   │   ├── 25
-│   │   │   │   └── monzo
-│   │   │   ├── 26
-│   │   │   │   └── how-we-picked-monzo
-│   │   │   ├── 15
-│   │   │   │   └── launching-the-bank
-│   │   │   ├── 16
-│   │   │   │   └── travel-reports
-│   │   │   ├── 05
-│   │   │   │   └── spending-on-mondo-update
-│   │   │   └── 08
-│   │   │       └── updated-design
-│   │   ├── 09
-│   │   │   ├── 23
-│   │   │   │   └── monzo-on-campus
-│   │   │   ├── 12
-│   │   │   │   └── 1-6-3
-│   │   │   ├── 26
-│   │   │   │   └── send-10-to-siri
-│   │   │   ├── 29
-│   │   │   │   └── android
-│   │   │   ├── 07
-│   │   │   │   └── our-approach-to-overdrafts
-│   │   │   ├── 19
-│   │   │   │   └── building-a-modern-bank-backend
-│   │   │   └── 20
-│   │   │       └── monzo-journals-philippines
-│   │   └── 10
-│   │       ├── 03
-│   │       │   └── targets
-│   │       ├── 26
-│   │       │   └── card-replacement-android
-│   │       ├── 17
-│   │       │   └── wonderful-surprises
-│   │       ├── 06
-│   │       │   └── monzo-shop
-│   │       ├── 19
-│   │       │   └── target-practice
-│   │       └── 10
-│   │           └── android-1-1-update
-│   ├── 2015
-│   │   ├── 11
-│   │   │   ├── 22
-│   │   │   │   └── mondohack
-│   │   │   ├── 16
-│   │   │   │   └── diversity-debt
-│   │   │   ├── 05
-│   │   │   │   └── why-api-driven-banking-matters
-│   │   │   └── 30
-│   │   │       └── mondohack-2
-│   │   ├── 12
-│   │   │   ├── 02
-│   │   │   │   └── 3-second-sandwich
-│   │   │   └── 15
-│   │   │       └── why-are-foreign-card-payments-such-a-mess
-│   │   ├── 06
-│   │   │   ├── 01
-│   │   │   │   └── welcome-to-mondo
-│   │   │   └── 04
-│   │   │       └── try-the-mondo-card
-│   │   ├── 07
-│   │   │   └── 03
-│   │   │       └── challenge-session
-│   │   ├── 08
+│   │   │   │   └── bad-with-money
 │   │   │   ├── 04
-│   │   │   │   └── meet-paul-rippon
+│   │   │   │   └── using-your-credit-card-on-holiday
+│   │   │   ├── 05
+│   │   │   │   └── flybe-collapse
+│   │   │   ├── 06
+│   │   │   │   ├── budget-irregular-income
+│   │   │   │   ├── engineering-with-no-degree
+│   │   │   │   └── march-monthly-update
+│   │   │   ├── 08
+│   │   │   │   └── getting-a-pay-rise
+│   │   │   ├── 13
+│   │   │   │   └── sell-stuff-online-with-monzo
+│   │   │   ├── 14
+│   │   │   │   └── money-in-love-lauren-dan
+│   │   │   ├── 15
+│   │   │   │   └── use-monzo-with-housemates
+│   │   │   ├── 18
+│   │   │   │   ├── a-trick-to-stop-you-spending-your-savings
+│   │   │   │   └── custom-pot-images
+│   │   │   ├── 19
+│   │   │   │   └── improving-our-staff-VPN
+│   │   │   ├── 21
+│   │   │   │   └── diversity-and-inclusion
+│   │   │   ├── 22
+│   │   │   │   ├── money-in-love-katherine-christina
+│   │   │   │   └── pausing-cheque-imaging
+│   │   │   ├── 27
+│   │   │   │   └── tone-of-voice-birthday
+│   │   │   ├── 28
+│   │   │   │   └── wow-air-collapse
+│   │   │   └── 29
+│   │   │       └── money-in-love-ash-bobby
+│   │   ├── 04
+│   │   │   ├── 01
+│   │   │   │   └── big-issue-monzo-pay-it-forward
+│   │   │   ├── 02
+│   │   │   │   └── pyramid-schemes-fractal-mandala
+│   │   │   ├── 03
+│   │   │   │   └── deploying-envoy-proxy
+│   │   │   ├── 04
+│   │   │   │   ├── launching-isas
+│   │   │   │   ├── money-in-love-nellie-nial
+│   │   │   │   └── why-we-block-freeze-close-monzo-accounts
+│   │   │   ├── 05
+│   │   │   │   └── april-monthly-update
+│   │   │   ├── 09
+│   │   │   │   ├── dear-monzo-frustrated-in-debt
+│   │   │   │   └── how-can-i-start-saving
+│   │   │   ├── 10
+│   │   │   │   ├── 1p-savings-challenge-chart
+│   │   │   │   ├── 1p-savings-challenge-monzo
+│   │   │   │   └── living-at-home
+│   │   │   ├── 11
+│   │   │   │   ├── custom-pot-images-android
+│   │   │   │   ├── money-in-love-claire-mike
+│   │   │   │   └── monzo-features-you-need-to-know-about
+│   │   │   ├── 17
+│   │   │   │   ├── how-to-get-a-mortgage
+│   │   │   │   └── shoud-i-get-a-credit-card
+│   │   │   ├── 18
+│   │   │   │   └── money-in-love-sian-matt
+│   │   │   ├── 23
+│   │   │   │   └── introducing-monzo-plus
+│   │   │   ├── 24
+│   │   │   │   ├── common-money-mistakes
+│   │   │   │   └── good-vs-bad-debt-should-i-borrow-money
+│   │   │   ├── 25
+│   │   │   │   └── money-in-love-rob-vic
+│   │   │   └── 26
+│   │   │       └── savings-marketplace
+│   │   ├── 05
+│   │   │   ├── 01
+│   │   │   │   └── save-little-and-often
+│   │   │   ├── 02
+│   │   │   │   └── shawbrook-savings-pots
+│   │   │   ├── 03
+│   │   │   │   └── writing-clear-terms-and-conditions
+│   │   │   ├── 07
+│   │   │   │   └── how-to-save-money-with-monzo
+│   │   │   ├── 08
+│   │   │   │   ├── money-in-love-rosie-alex
+│   │   │   │   └── switch-energy-supplier-through-monzo
+│   │   │   ├── 09
+│   │   │   │   └── giving-to-charity
+│   │   │   ├── 10
+│   │   │   │   └── should-i-get-monzo
+│   │   │   ├── 13
+│   │   │   │   └── supporting-vulnerable-customers
+│   │   │   ├── 15
+│   │   │   │   ├── gender-pay-gap
+│   │   │   │   ├── monzo-plus-the-road-ahead
+│   │   │   │   ├── national-numeracy-challenge
+│   │   │   │   └── supporting-mental-health
+│   │   │   ├── 16
+│   │   │   │   ├── adhd-and-money
+│   │   │   │   ├── global-accessibility-awareness
+│   │   │   │   └── saving-money-going-vegetarian
+│   │   │   ├── 17
+│   │   │   │   └── how-to-save-money
+│   │   │   ├── 20
+│   │   │   │   └── two-million
+│   │   │   ├── 22
+│   │   │   │   ├── daily-saving-with-monzo
+│   │   │   │   ├── dear-monzo-first-time-buyer
+│   │   │   │   └── monzo-tv-ads
+│   │   │   ├── 23
+│   │   │   │   ├── nudge-theory-and-money
+│   │   │   │   ├── protect-yourself-agains-app-fraud
+│   │   │   │   └── save-money-to-afford-a-holiday
+│   │   │   ├── 28
+│   │   │   │   └── fixing-notifications-on-android
+│   │   │   └── 30
+│   │   │       ├── everyone-does-user-research-at-monzo
+│   │   │       ├── faster-payments-issue
+│   │   │       └── micro-saving-with-monzo
+│   │   ├── 06
+│   │   │   ├── 03
+│   │   │   │   ├── ramadan-swear-pot
+│   │   │   │   └── vegan-on-a-budget
+│   │   │   ├── 04
+│   │   │   │   ├── reverse-1p-savings-challenge-monzo
+│   │   │   │   └── wedding-guests-debt
+│   │   │   ├── 05
+│   │   │   │   ├── can-i-get-monzo-if-i-already-have-a-bank-account
+│   │   │   │   └── should-i-bank-transfer-money-to-a-safe-account
+│   │   │   ├── 06
+│   │   │   │   └── pyramid-schemes-are-illegal
+│   │   │   ├── 07
+│   │   │   │   ├── save-the-date-challenge
+│   │   │   │   └── what-is-interest-explained-in-simple-words
+│   │   │   ├── 11
+│   │   │   │   ├── 1p-savings-challenge-monthly-on-payday
+│   │   │   │   └── should-i-start-investing
+│   │   │   ├── 12
+│   │   │   │   └── make-monzo-my-main-account
+│   │   │   ├── 13
+│   │   │   │   ├── monzo-us-blog-monzo-usa
+│   │   │   │   └── monzo-usa
+│   │   │   ├── 14
+│   │   │   │   ├── monzo-manage-money-at-a-festival
+│   │   │   │   └── monzo-most-asked-questions
+│   │   │   ├── 17
+│   │   │   │   ├── monzo-called-to-say-i-should-transfer-money-to-a-safe-account
+│   │   │   │   └── monzo-manchester
+│   │   │   ├── 18
+│   │   │   │   ├── dear-monzo-debt-and-credit-scores
+│   │   │   │   └── how-to-save-money-on-your-energy
+│   │   │   ├── 20
+│   │   │   │   ├── summer-savings-challenge
+│   │   │   │   └── why-bank-transfers-failed-on-30th-may-2019
+│   │   │   ├── 24
+│   │   │   │   └── business-banking-update
+│   │   │   ├── 25
+│   │   │   │   └── monzos-latest-funding-round
+│   │   │   ├── 27
+│   │   │   │   ├── monzo-2019-annual-report
+│   │   │   │   ├── trending-spending-central-london
+│   │   │   │   ├── trending-spending-east-london
+│   │   │   │   ├── trending-spending-london
+│   │   │   │   ├── trending-spending-north-london
+│   │   │   │   ├── trending-spending-south-east-london
+│   │   │   │   ├── trending-spending-south-west-london
+│   │   │   │   └── trending-spending-west-london
+│   │   │   └── 28
+│   │   │       └── pay-yourself-first-how-to-save-money
+│   │   ├── 07
+│   │   │   ├── 01
+│   │   │   │   └── how-much-are-we-spending-on-going-out
+│   │   │   ├── 03
+│   │   │   │   ├── money-at-university
+│   │   │   │   └── the-role-of-technology-in-social-inclusion
+│   │   │   ├── 04
+│   │   │   │   └── monzo-plus-july-update
+│   │   │   ├── 08
+│   │   │   │   ├── accounting-tools-monzo-business-account
+│   │   │   │   └── how-we-respond-to-incidents
+│   │   │   ├── 09
+│   │   │   │   └── money-in-love-russell-and-richard
+│   │   │   ├── 10
+│   │   │   │   ├── no-spend-challenge
+│   │   │   │   └── the-evolution-of-monzo-chat
+│   │   │   ├── 18
+│   │   │   │   ├── investment-opportunity-scams
+│   │   │   │   ├── money-in-love-fuminori-and-jake
+│   │   │   │   └── remortgaging-test
+│   │   │   ├── 19
+│   │   │   │   └── should-i-pay-in-local-currency-or-pounds-gbp-when-i-use-monzo-abroad
+│   │   │   ├── 22
+│   │   │   │   └── monzo-reviews
+│   │   │   ├── 23
+│   │   │   │   └── the-pink-bank-card-you-keep-seeing-what-it-is-and-how-to-get-one
+│   │   │   ├── 24
+│   │   │   │   ├── dear-monzo-budgeting-is-hard
+│   │   │   │   ├── fixed-term-savings-pot-account
+│   │   │   │   └── market-leading-interest-rate-on-monzo-savings-pots
+│   │   │   ├── 29
+│   │   │   │   └── reclaim-mis-sold-ppi-and-get-compensation-free
+│   │   │   ├── 30
+│   │   │   │   ├── start-spending-immediately-with-apple-pay-google-pay
+│   │   │   │   └── we-had-issues-with-monzo-yesterday
+│   │   │   └── 31
+│   │   │       └── how-we-experiment-at-monzo
+│   │   ├── 08
+│   │   │   ├── 01
+│   │   │   │   ├── august-no-spend-challenge
+│   │   │   │   ├── meet-bekki
+│   │   │   │   └── my-ex-racked-up-thousands-of-pounds-of-debt-in-my-name
+│   │   │   ├── 02
+│   │   │   │   └── taking-cash-out-on-holiday
+│   │   │   ├── 05
+│   │   │   │   ├── how-do-i-get-a-monzo-account
+│   │   │   │   └── weve-fixed-an-issue-storing-some-customers-pins
+│   │   │   ├── 07
+│   │   │   │   └── what-is-a-regular-savings-account
+│   │   │   ├── 09
+│   │   │   │   ├── how-to-get-the-most-out-of-monzo
+│   │   │   │   ├── how-were-doing-savings-accounts-differently
+│   │   │   │   └── what-do-i-need-to-set-up-a-monzo-account
+│   │   │   ├── 13
+│   │   │   │   └── our-lending-principles
+│   │   │   ├── 14
+│   │   │   │   └── money-in-love-will-and-max
+│   │   │   ├── 15
+│   │   │   │   └── loans-the-monzo-way
+│   │   │   ├── 16
+│   │   │   │   └── monzo-international-student
+│   │   │   ├── 20
+│   │   │   │   └── monzo-now-lets-you-get-paid-a-day-early-for-free
+│   │   │   ├── 22
+│   │   │   │   ├── get-paid-early-twitter
+│   │   │   │   ├── get-your-student-loan-a-day-before-your-friends-do
+│   │   │   │   ├── money-in-love-craig-and-nichola
+│   │   │   │   └── strong-customer-authentication
+│   │   │   ├── 28
+│   │   │   │   ├── how-to-open-a-monzo-account
+│   │   │   │   ├── open-a-bank-account-as-a-student-without-proof-of-address
+│   │   │   │   └── take-a-video-selfie-to-sign-up-for-monzo
+│   │   │   ├── 29
+│   │   │   │   ├── dear-monzo-should-i-pay-off-my-student-loan-early
+│   │   │   │   └── monzo-plus-bundles
+│   │   │   └── 30
+│   │   │       ├── is-monzo-a-debit-card
+│   │   │       └── what-is-no-spendtember
+│   │   ├── 09
+│   │   │   ├── 03
+│   │   │   │   ├── how-much-can-you-withdraw-from-an-atm
+│   │   │   │   └── money-in-love-michael-and-dan
+│   │   │   ├── 05
+│   │   │   │   └── how-long-should-you-keep-bank-statements
+│   │   │   ├── 06
+│   │   │   │   └── 10-minimum-savings-pot
+│   │   │   ├── 08
+│   │   │   │   └── why-monzo-wasnt-working-on-july-29th
+│   │   │   ├── 10
+│   │   │   │   └── reasons-not-to-get-monzo
+│   │   │   ├── 11
+│   │   │   │   └── strong-customer-authentication-using-chip-and-pin
+│   │   │   ├── 16
+│   │   │   │   └── three-million
+│   │   │   ├── 18
+│   │   │   │   └── tax-free-savings-allowance
+│   │   │   ├── 20
+│   │   │   │   └── the-monzo-app-is-changing
+│   │   │   ├── 23
+│   │   │   │   ├── lump-sum-savings-account
+│   │   │   │   └── thomas-cook-collapse
+│   │   │   ├── 26
+│   │   │   │   └── introducing-salary-sorter-and-bills-pots
+│   │   │   └── 30
+│   │   │       └── what-is-locktober
+│   │   ├── 10
+│   │   │   ├── 01
+│   │   │   │   └── bills-pots-images
+│   │   │   ├── 02
+│   │   │   │   └── joint-bank-account
+│   │   │   ├── 03
+│   │   │   │   └── joint-account-death
+│   │   │   ├── 05
+│   │   │   │   └── savings-account
+│   │   │   ├── 08
+│   │   │   │   └── get-out-of-debt
+│   │   │   ├── 09
+│   │   │   │   └── how-to-save-money-on-food
+│   │   │   ├── 10
+│   │   │   │   ├── how-to-save-money-according-to-people-who-actually-manage-it
+│   │   │   │   └── joint-account-tax
+│   │   │   ├── 11
+│   │   │   │   ├── 10-things-to-say-to-your-friend-who-still-refuses-to-get-monzo
+│   │   │   │   ├── 4-ways-monzo-makes-payday-even-better
+│   │   │   │   └── how-our-security-team-handle-secrets
+│   │   │   ├── 14
+│   │   │   │   └── 39-times-you-absolutely-hated-monzo
+│   │   │   ├── 15
+│   │   │   │   └── savings-plan
+│   │   │   ├── 18
+│   │   │   │   └── watchdog-response
+│   │   │   ├── 22
+│   │   │   │   └── how-to-save-money-in-london
+│   │   │   ├── 23
+│   │   │   │   └── 9-questions-to-ask-yourself-before-you-borrow-money
+│   │   │   ├── 24
+│   │   │   │   ├── 15-features-thatll-turn-monzo-sceptics-into-monzo-obsessives
+│   │   │   │   ├── 9-monzo-features-and-why-you-need-them
+│   │   │   │   ├── how-to-save-money-on-your-wedding
+│   │   │   │   └── whats-next-for-the-new-look-monzo-app
+│   │   │   ├── 28
+│   │   │   │   └── more-people-are-switching-to-monzo-and-away-from-legacy-banks
+│   │   │   ├── 29
+│   │   │   │   └── winter-savings-challenge
+│   │   │   └── 31
+│   │   │       ├── how-to-save-money-as-a-teenager
+│   │   │       ├── how-to-save-money-on-household-bills
+│   │   │       └── statement-of-fees-to-your-account
+│   │   ├── 11
+│   │   │   ├── 02
+│   │   │   │   └── pay-off-credit-card
+│   │   │   ├── 04
+│   │   │   │   └── how-we-scaled-our-data-team-from-1-to-30-people-part-1
+│   │   │   ├── 07-save-money-for-your-kids
+│   │   │   ├── 11
+│   │   │   │   ├── 10-monzo-features-your-old-bank-doesnt-have-yet
+│   │   │   │   └── unlock-the-monzo-app-with-your-fingerprint
+│   │   │   ├── 12
+│   │   │   │   └── what-are-unsecured-loans
+│   │   │   ├── 13
+│   │   │   │   └── save-money-when-you-tweet-using-monzo
+│   │   │   ├── 14
+│   │   │   │   └── how-much-money-should-i-save
+│   │   │   └── 15
+│   │   │       ├── how-do-i-get-out-of-my-overdraft
+│   │   │       ├── how-to-save-money-on-car-insurance
+│   │   │       └── saving-for-your-grandchildren
+│   │   ├── 12
+│   │   │   ├── 03
+│   │   │   │   └── understanding-universal-credit
+│   │   │   ├── 05
+│   │   │   │   ├── car-finance-option
+│   │   │   │   ├── secured-loan
+│   │   │   │   └── what-you-need-to-know-about-going-full-monzo
+│   │   │   ├── 09
+│   │   │   │   └── our-overdrafts-are-changing
+│   │   │   ├── 11
+│   │   │   │   ├── how-do-loans-work
+│   │   │   │   └── monzo-main-bank-account
+│   │   │   ├── 23
+│   │   │   │   └── how-well-contact-you
+│   │   │   └── 30
+│   │   │       └── us-update-2019
+│   │   └── 23
+│   │       └── 07
+│   │           └── monzo-quarterly-update-q3-2019
+│   ├── 2020
+│   │   ├── 01
+│   │   │   ├── 14
+│   │   │   │   └── monzo-us-blog-contactless
+│   │   │   ├── 15
+│   │   │   │   └── monzo-us-blog-pots-us-beta
+│   │   │   └── 17
+│   │   │       └── weve-started-reporting-to-experian
+│   │   ├── 02
+│   │   │   └── 24
+│   │   │       └── credit-scores
+│   │   ├── 03
+│   │   │   ├── 11
+│   │   │   │   └── monzo-us-blog-us-update-waitlist
+│   │   │   └── 18
+│   │   │       └── monzo-us-blog-coronavirus-update
+│   │   ├── 04
+│   │   │   ├── 01
+│   │   │   │   └── monzo-business-for-web-is-here
+│   │   │   └── 03
+│   │   │       └── tips-for-being-extra-safe-on-monzo-business-for-web
+│   │   ├── 05
+│   │   │   ├── 04
+│   │   │   │   └── confirmation-of-payee-launch
+│   │   │   ├── 15
+│   │   │   │   └── monzo-us-blog-you-can-now-hide-your-pots-and-change-the-order-theyre-in-us
+│   │   │   ├── 19
+│   │   │   │   └── monzo-business-for-web-upgrade
+│   │   │   └── puppy-and-kitten-deposit-scams-are-on-the-rise
+│   │   ├── 06
+│   │   │   ├── 01
+│   │   │   │   └── new-business-categories
+│   │   │   ├── 23
+│   │   │   │   └── money-mules
 │   │   │   └── 27
-│   │   │       └── banking-survey-results
-│   │   └── 10
-│   │       ├── 22
-│   │       │   └── the-hidden-costs-of-free-banking
-│   │       ├── 01
-│   │       │   └── the-first-mondo-hackathon
-│   │       ├── 15
-│   │       │   └── meet-tracy-abraham
+│   │   │       └── pride-remembering-our-history-and-looking-towards-the-fight-ahead
+│   │   ├── 07
+│   │   │   └── 06
+│   │   │       └── easy-bank-transfers
+│   │   ├── 08
+│   │   │   └── 17
+│   │   │       └── were-the-best-bank-for-overall-service-quality-and-online-and-mobile-banking
+│   │   ├── 09
+│   │   │   ├── 17
+│   │   │   │   └── fifty-thousand-monzo-business-customers
+│   │   │   ├── 24
+│   │   │   │   └── amex-in-monzo-plus
+│   │   │   └── 30
+│   │   │       └── mental-health-self-employed
+│   │   ├── 10
+│   │   │   ├── 13
+│   │   │   │   └── innovators-in-economics
+│   │   │   ├── 15
+│   │   │   │   └── flux-hm
+│   │   │   ├── 19
+│   │   │   │   ├── autoscaling-monzo
+│   │   │   │   └── interview-jaz-broughton
+│   │   │   ├── 20
+│   │   │   │   ├── comparing-monzo-premium-and-monzo-plus
+│   │   │   │   ├── how-we-value-monzo-premium
+│   │   │   │   └── introducing-monzo-premium
+│   │   │   ├── 22
+│   │   │   │   └── accounting-for-startups
+│   │   │   ├── 27
+│   │   │   │   └── maggie-lena-walker
+│   │   │   └── 30
+│   │   │       └── money-management-in-the-black-community
+│   │   ├── 11
+│   │   │   ├── 05
+│   │   │   │   └── lessons-learnt-scaling-research
+│   │   │   ├── 11
+│   │   │   │   ├── customer-support-design
+│   │   │   │   └── paypal-text-scams
+│   │   │   ├── 24
+│   │   │   │   └── big-guide-to-borrowing-and-debt
+│   │   │   └── 25
+│   │   │       ├── how-to-cope-with-reduced-work-hours-according-to-the-experts
+│   │   │       └── new-to-monzo-business-weve-made-invoices-better
+│   │   └── 12
+│   │       ├── 03
+│   │       │   └── how-to-cope-with-being-self-employed-or-working-in-the-gig-economy-during
+│   │       ├── 04
+│   │       │   └── accounting-basics-for-every-small-business
 │   │       ├── 08
-│   │       │   └── making-our-mark
-│   │       └── 30
-│   │           └── we-are-ready
-│   ├── monzo-hq
-│   ├── team
-│   ├── technology
-│   ├── community
-│   ├── product-updates
+│   │       │   └── christmas-shopping-scams-what-to-look-out-for
+│   │       ├── 15
+│   │       │   └── how-accounting-can-help-your-business-grow
+│   │       ├── 16
+│   │       │   └── monzo-us-blog-personalized-cards-have-landed
+│   │       └── 17
+│   │           └── how-to-cope-with-being-made-redundant
+│   ├── 2020-01-01
+│   │   └── switch-to-monzo-without-closing-your-old-account
+│   ├── 2021
+│   │   ├── 01
+│   │   │   ├── 03
+│   │   │   │   └── origins-of-money-superstitions
+│   │   │   ├── 05
+│   │   │   │   └── self-employed-tax-basics
+│   │   │   ├── 13
+│   │   │   │   └── self-employed-tips-for-self-assessment
+│   │   │   └── 21
+│   │   │       └── financial-education-spending-and-budgeting
+│   │   ├── 02
+│   │   │   └── 09
+│   │   │       └── borrowing-data-at-monzo
+│   │   ├── 03
+│   │   │   ├── 05
+│   │   │   │   └── march-2021-budget-small-businesses
+│   │   │   ├── 11
+│   │   │   │   └── how-to-prepare-your-business-for-the-new-tax-year
+│   │   │   └── 30
+│   │   │       └── get-ready-for-the-road-with-rac
+│   │   ├── 04
+│   │   │   └── 20
+│   │   │       └── new-features-for-connected-accounts-and-virtual-cards
+│   │   ├── 05
+│   │   │   ├── 12
+│   │   │   │   └── new-improved-invoices
+│   │   │   ├── 13
+│   │   │   │   └── supporting-our-customers-through-mental-health-problems
+│   │   │   └── 18
+│   │   │       └── monzo-us-blog-updating-our-product-roadmap-for-2021
+│   │   ├── 07
+│   │   │   └── 19
+│   │   │       └── meet-richard-a-monzo-us-backend-engineer
+│   │   ├── 08
+│   │   │   ├── 10
+│   │   │   │   └── spinning-up-an-analytics-engineering-team
+│   │   │   ├── 12
+│   │   │   │   └── monzo-business-invoicing
+│   │   │   └── 24
+│   │   │       └── monzo-us-blog-move-money-to-and-from-your-other-accounts-now-in-beta-testing
+│   │   ├── 09
+│   │   │   ├── 15
+│   │   │   │   └── how-we-measure-software-excellence
+│   │   │   ├── 16
+│   │   │   │   └── monzo-flex
+│   │   │   └── 30
+│   │   │       └── documenting-pull-requests-is-as-important-as-writing-good-code
+│   │   ├── 10
+│   │   │   ├── 06
+│   │   │   │   └── black-history-is-all-of-our-history
+│   │   │   ├── 08
+│   │   │   │   └── what-is-open-banking
+│   │   │   ├── 12
+│   │   │   │   └── getting-paid-with-monzo-business
+│   │   │   ├── 13
+│   │   │   │   └── 10-great-black-writers-who-teach-us-about-black-culture
+│   │   │   ├── 14
+│   │   │   │   └── an-introduction-to-monzos-data-stack
+│   │   │   ├── 18
+│   │   │   │   └── how-one-26-year-old-is-balancing-her-lockdown-candle-business-with-full-time
+│   │   │   └── 28
+│   │   │       └── machine-learning-at-monzo-in-2021
+│   │   ├── 11
+│   │   │   ├── 02
+│   │   │   │   ├── i-joined-monzo-in-2016-and-was-the-first-black-person-on-the-team
+│   │   │   │   └── net-zero-carbon-emissions
+│   │   │   ├── 11
+│   │   │   │   └── monzo-us-blog-meet-nathan-our-head-of-engineering
+│   │   │   ├── 15
+│   │   │   │   └── monzo-us-blog-october-virtual-community-event-recap
+│   │   │   ├── 18
+│   │   │   │   └── protecting-our-most-sensitive-secrets
+│   │   │   ├── 23
+│   │   │   │   └── monzo-flex-ways-to-pay-later
+│   │   │   └── 29
+│   │   │       └── get-paid-with-apple-pay-and-google-pay
+│   │   └── 12
+│   │       ├── 16
+│   │       │   └── customise-contactless-limits
+│   │       └── 22
+│   │           └── how-to-think-about-the-roi-of-data-work
+│   ├── 2022
+│   │   ├── 01
+│   │   │   └── 28
+│   │   │       └── keep-your-phone-and-monzo-app-up-to-date
+│   │   ├── 02
+│   │   │   ├── 01
+│   │   │   │   └── monzo-us-blog-monzo-moves-from-beta-to-public-launch-in-the-us
+│   │   │   ├── 04
+│   │   │   │   └── how-we-validated-our-handling-time-data
+│   │   │   ├── 08
+│   │   │   │   └── processing-payments-safely-at-scale
+│   │   │   ├── 15
+│   │   │   │   └── securely-delegating-trust-with-digital-signatures-and-secret-storage-systems
+│   │   │   ├── 16
+│   │   │   │   └── what-is-economic-abuse-and-how-to-spot-it
+│   │   │   ├── 17
+│   │   │   │   └── my-first-6-months-at-monzo-as-a-backend-engineer
+│   │   │   ├── 18
+│   │   │   │   └── how-we-calculate-balances
+│   │   │   └── 23
+│   │   │       └── mutual-mentoring-at-monzo
+│   │   ├── 03
+│   │   │   ├── 02
+│   │   │   │   └── designing-a-regional-experiment-to-measure-incrementality
+│   │   │   ├── 08
+│   │   │   │   └── international-womens-day-2022
+│   │   │   ├── 2
+│   │   │   │   └── everything-you-need-to-know-about-making-tax-digital
+│   │   │   ├── 21
+│   │   │   │   ├── data-hiring-at-monzo
+│   │   │   │   └── our-tax-strategy
+│   │   │   ├── 22
+│   │   │   │   └── preparing-for-mobile-interviews-at-monzo
+│   │   │   ├── 23
+│   │   │   │   └── demystifying-the-backend-engineering-interview-process
+│   │   │   └── 31
+│   │   │       └── how-we-secure-monzos-banking-platform
+│   │   ├── 04
+│   │   │   ├── 04
+│   │   │   │   └── my-first-3-months-at-monzo-as-an-engineering-manager
+│   │   │   ├── 05
+│   │   │   │   └── monzo-us-blog-2022-survey-insights
+│   │   │   ├── 12
+│   │   │   │   └── how-anyone-at-monzo-can-test
+│   │   │   ├── 20
+│   │   │   │   └── how-our-android-engineers-automated-the-removal-of-kotlin-synthetics
+│   │   │   └── 26
+│   │   │       └── monzos-machine-learning-stack
+│   │   ├── 05
+│   │   │   ├── 04
+│   │   │   │   └── view-cvc-in-app
+│   │   │   ├── 06
+│   │   │   │   └── becoming-an-engineering-manager-1-year-in
+│   │   │   ├── 13
+│   │   │   │   └── moving-from-data-science-into-machine-learning
+│   │   │   ├── 16
+│   │   │   │   └── how-we-deploy-to-production-over-100-times-a-day
+│   │   │   ├── 18
+│   │   │   │   └── joining-monzo-as-a-data-scientist
+│   │   │   ├── 24
+│   │   │   │   ├── pellets-not-cannonballs-how-we-experiment-at-monzo
+│   │   │   │   └── send-money-abroad-with-monzo-business
+│   │   │   └── 26
+│   │   │       └── humans-who-can-rpc-securing-staff-access-to-microservices
+│   │   ├── 06
+│   │   │   ├── 14
+│   │   │   │   └── virtual-cards-for-monzo-business-pro
+│   │   │   ├── 22
+│   │   │   │   └── how-to-increase-your-impact-as-a-product-designer
+│   │   │   ├── 23
+│   │   │   │   └── our-mobile-release-process-an-illustrated-story
+│   │   │   ├── 24
+│   │   │   │   └── redefining-our-microservice-development-process
+│   │   │   └── 30
+│   │   │       └── were-launching-in-app-charity-donations
+│   │   ├── 07
+│   │   │   ├── 05
+│   │   │   │   └── my-first-3-months-at-monzo-as-a-product-manager
+│   │   │   ├── 06
+│   │   │   │   └── researching-operations-at-monzo-building-a-product-our-customers-never-see
+│   │   │   ├── 22
+│   │   │   │   └── a-week-in-the-life-of-a-product-manager-at-monzo
+│   │   │   └── 26
+│   │   │       └── switching-from-customer-service-representative-to-backend-engineer
+│   │   ├── 08
+│   │   │   └── 05
+│   │   │       └── scaling-our-security-detection-pipeline-with-sigma
+│   │   ├── 09
+│   │   │   └── 29
+│   │   │       └── migrating-our-monorepo-seamlessly-from-dep-to-go-modules
+│   │   ├── 10
+│   │   │   ├── 04
+│   │   │   │   └── product-management-at-monzo-the-interview-process
+│   │   │   └── 13
+│   │   │       └── becoming-a-product-marketing-manager-at-monzo
+│   │   ├── 11
+│   │   │   ├── 02
+│   │   │   │   └── argo-rollouts-at-scale
+│   │   │   ├── 04
+│   │   │   │   └── how-we-design-magic-moments-at-monzo
+│   │   │   ├── 10
+│   │   │   │   └── design-system-approach-to-research-guidelines
+│   │   │   ├── 16
+│   │   │   │   └── how-insights-shaped-building-a-0-1-product-monzo-flex
+│   │   │   ├── 25
+│   │   │   │   └── reducing-nat-gateway-cost-with-private-networking-between-aws-and-gcp
+│   │   │   ├── 28
+│   │   │   │   └── our-borrowing-principles
+│   │   │   └── 29
+│   │   │       └── budgeting-for-things-that-bring-me-joy-helped-me-pay-off-debt-and-start
+│   │   └── 12
+│   │       ├── 05how-to-balance-spending-and-saving
+│   │       ├── 13
+│   │       │   └── monzo-magic-hackathon
+│   │       ├── 15
+│   │       │   └── building-an-extension-framework-for-dbt
+│   │       ├── 19
+│   │       │   └── machine-learning-at-monzo-in-2022
+│   │       └── 28
+│   │           └── whats-so-unique-about-design-and-research-at-monzo
+│   ├── 2022-02-24
+│   │   └── scaling-our-on-call-process
+│   ├── 2023
+│   │   ├── 01
+│   │   │   ├── 18
+│   │   │   │   └── olakunles-story
+│   │   │   ├── 25
+│   │   │   │   └── rickys-story
+│   │   │   ├── 26
+│   │   │   │   └── preparing-for-spikes-in-traffic-as-millions-get-paid-early
+│   │   │   └── 31
+│   │   │       ├── an-update-on-our-gender-pay-gap-jan-2023
+│   │   │       └── lukes-story
+│   │   ├── 02
+│   │   │   ├── 02
+│   │   │   │   └── catherines-story
+│   │   │   ├── 15
+│   │   │   │   ├── managing-money-while-single
+│   │   │   │   └── using-topic-modelling-to-understand-customer-saving-goals
+│   │   │   ├── 21
+│   │   │   │   ├── automated-savings-1p-challenge
+│   │   │   │   └── build-confidence-managing-money
+│   │   │   ├── 22
+│   │   │   │   └── becoming-direct-participants-of-bacs
+│   │   │   └── 23
+│   │   │       └── manage-your-money-minimal-effort
+│   │   ├── 03
+│   │   │   ├── 07
+│   │   │   │   └── how-to-create-a-sinking-fund
+│   │   │   ├── 09
+│   │   │   │   └── sinking-fund-future-you-pots
+│   │   │   ├── 17
+│   │   │   │   └── deinfluencing-mindful-shopping-tips
+│   │   │   ├── 20
+│   │   │   │   └── what-do-app-screens-and-pedestrian-crossings-have-in-common
+│   │   │   ├── 23
+│   │   │   │   └── no-spend-year-challenge
+│   │   │   ├── 24
+│   │   │   │   └── how-to-do-a-no-spend-challenge
+│   │   │   ├── 28
+│   │   │   │   └── what-we-learned-from-43-experiments-in-12-months
+│   │   │   └── 29
+│   │   │       └── were-helping-you-build-a-safety-net
+│   │   ├── 04
+│   │   │   ├── 03
+│   │   │   │   └── euro-transfers-to-your-monzo-account
+│   │   │   ├── 13
+│   │   │   │   └── business-instant-access-savings-are-here
+│   │   │   └── 28
+│   │   │       ├── payday-tips-while-treating-yourself
+│   │   │       └── speeding-up-our-balance-read-time-the-planning-phase
+│   │   └── 10
+│   │       └── 03
+│   │           └── how-to-start-talking-about-money-overspending
+│   ├── 21
+│   ├── 22
+│   ├── 23
+│   ├── 24
+│   │   └── 01
+│   │       └── 2020
+│   │           └── monzo-us-blog-us-product-roadmap
+│   ├── 25
+│   ├── 26
+│   ├── 27
+│   ├── 28
+│   ├── 29
+│   ├── 29-ways-save-money-household-bills
+│   ├── 3
+│   ├── 3-practical-tips-to-reduce-daily-anxiety
+│   ├── 30
+│   ├── 31
+│   ├── 32
+│   ├── 33
+│   ├── 34
+│   ├── 35
+│   ├── 36
+│   ├── 37
+│   ├── 38
+│   ├── 39
+│   ├── 4
+│   ├── 40
+│   ├── 41
+│   ├── 42
+│   ├── 43
+│   ├── 44
+│   ├── 45
+│   ├── 46
+│   ├── 47
+│   ├── 48
+│   ├── 49
+│   ├── 5
+│   ├── 5-practical-tips-for-feeling-less-lonely-in-lockdown
+│   ├── 50
+│   ├── 51
+│   ├── 52
+│   ├── 52-week-savings-challenge
+│   ├── 52-week-savings-challenge-2021
+│   ├── 53
+│   ├── 54
+│   ├── 55
+│   ├── 56
+│   ├── 57
+│   ├── 58
+│   ├── 59
+│   ├── 6
+│   ├── 60
+│   ├── 61
+│   ├── 62
+│   ├── 63
+│   ├── 64
+│   ├── 65
+│   ├── 66
+│   ├── 67
+│   ├── 68
+│   ├── 69
+│   ├── 7
+│   ├── 70
+│   ├── 71
+│   ├── 8
+│   ├── 8-things-we-learnt-at-the-futureofmonzo
+│   ├── 8-ways-monzo-plus-can-power-up-your-budgeting-and-supercharge-your-savings
+│   ├── 9
+│   ├── access-universal-credit
+│   ├── adhd-women-managing-money-dopamine-friendly
+│   ├── adhd-women-money-impulse-spending
+│   ├── an-engineering-managers-guide-to-the-one-to-one
+│   ├── an-update-on-the-women-in-finance-charter-2020
+│   ├── are-you-an-ally-or-an-advocate-for-lgbtq-inclusion
+│   ├── authors
+│   │   ├── adam-little
+│   │   ├── albert-cabre-juan
+│   │   ├── alex-manthei
+│   │   ├── amy-grieveson
+│   │   ├── anastasios-morfopoulos
+│   │   ├── andy-smart
+│   │   ├── angus-preston
+│   │   ├── ankit-kumar
+│   │   ├── anthea-jackson
+│   │   ├── antonio-angrisani
+│   │   ├── aongola-victor-simuyemba
+│   │   ├── arthur-ceccotti
+│   │   ├── awn-umar
+│   │   ├── bailey-kursar
+│   │   ├── basma-taha
+│   │   ├── beatrice-borbon
+│   │   │   ├── 10
+│   │   │   ├── 11
+│   │   │   ├── 2
+│   │   │   ├── 3
+│   │   │   ├── 4
+│   │   │   ├── 5
+│   │   │   ├── 6
+│   │   │   ├── 7
+│   │   │   ├── 8
+│   │   │   └── 9
+│   │   ├── bee-skerritt
+│   │   ├── ben-molyneaux
+│   │   ├── ben-strak
+│   │   ├── beth-toms
+│   │   ├── bianca-trif
+│   │   ├── bobbi-nicholson
+│   │   ├── borja-vazquez
+│   │   ├── brad-corrigan
+│   │   ├── bradley-campbell
+│   │   ├── bradley-kemp
+│   │   ├── bruno-vaz-moco
+│   │   ├── buki-sule
+│   │   ├── candice-hardman
+│   │   ├── chiamaka-oke
+│   │   ├── chongyang-shi
+│   │   ├── chris-bond
+│   │   ├── chris-doughty
+│   │   ├── chris-evans
+│   │   ├── chris-lees
+│   │   ├── chris-maclean
+│   │   ├── chris-wood
+│   │   ├── constantijn-schepens
+│   │   ├── dani-garcia
+│   │   ├── dani-shipp
+│   │   ├── daniel-cannon
+│   │   ├── daniel-chatfield
+│   │   ├── david-brandon
+│   │   ├── dean-nash
+│   │   ├── denise-wong
+│   │   ├── dillon-van-auken
+│   │   ├── dimitri-masin
+│   │   ├── dom-gambetta
+│   │   ├── dom-goodwin
+│   │   ├── dovydas-bartkevicius
+│   │   ├── duncan-roberts
+│   │   ├── eleni-pavlovic
+│   │   ├── elizabeth-ajala
+│   │   ├── elizabeth-hibbert
+│   │   ├── ella-johanny
+│   │   ├── ella-moody
+│   │   ├── emily-barrett
+│   │   ├── emma-garland
+│   │   ├── emma-northcott
+│   │   ├── emma-vanbrabant
+│   │   ├── erenma-chime
+│   │   ├── fernando-fanton
+│   │   ├── filipe-varela
+│   │   ├── francine-kayombo
+│   │   ├── gemma-rogers
+│   │   ├── grace-paul
+│   │   ├── harry-ashbridge
+│   │   ├── heldiney-pereira
+│   │   ├── hernan-dieguez
+│   │   ├── hugo-cornejo
+│   │   ├── indi-pollard
+│   │   ├── isis-bassaragh
+│   │   ├── izak-nel
+│   │   ├── jack-cully
+│   │   ├── jack-kleeman
+│   │   ├── jacq-bridge
+│   │   ├── jacquetta-bridge
+│   │   ├── james-allison
+│   │   ├── james-berry
+│   │   ├── james-de-souza
+│   │   ├── james-routley
+│   │   ├── jami-welch
+│   │   │   └── 2
+│   │   ├── jamie-mcdonald
+│   │   ├── jarno-wolf
+│   │   ├── jarryd-trokis
+│   │   ├── jess-bilcock
+│   │   ├── jesse-cogswell
+│   │   ├── jimi-hewett
+│   │   ├── joe-ellis
+│   │   ├── joe-rowe
+│   │   ├── jon-fry
+│   │   ├── jonas-huckestein
+│   │   ├── jonny-long
+│   │   ├── joost-van-oorschot
+│   │   ├── jordan-fish
+│   │   ├── jordan-shwide
+│   │   ├── joseph-pallamidessi
+│   │   ├── josh-hill
+│   │   ├── julie-oey
+│   │   ├── julio-lopes
+│   │   ├── kat-mccann
+│   │   ├── kate-graham
+│   │   ├── kate-hollowood
+│   │   │   ├── 2
+│   │   │   └── 3
+│   │   ├── kate-kerr
+│   │   ├── kate-meakin
+│   │   ├── kavi-dhokia
+│   │   ├── kieran-leblanc
+│   │   ├── kieran-mchugh
+│   │   ├── kirsten-doherty
+│   │   ├── kushal-babla
+│   │   ├── kyle-campbell
+│   │   ├── laura-whateley
+│   │   ├── leah-templeman
+│   │   ├── leanne-kelsall
+│   │   ├── lew-isaacs
+│   │   ├── lia-dixon-calliste
+│   │   ├── liam-houghton
+│   │   ├── lindsey-jayne
+│   │   ├── lizzie-morgan
+│   │   ├── louis-cox
+│   │   ├── luba-chudnovets
+│   │   ├── lucy-sweet
+│   │   ├── luke-briscoe
+│   │   ├── luke-kelly
+│   │   ├── luke-singham
+│   │   ├── maja-bayyoud
+│   │   ├── maria-campbell
+│   │   ├── martin-grayson
+│   │   ├── matt-gilson
+│   │   ├── matt-jones
+│   │   ├── matt-measor
+│   │   ├── matthew-fisher
+│   │   ├── matthew-knight
+│   │   ├── matthew-parish
+│   │   ├── max-white
+│   │   ├── max-winston
+│   │   ├── melissa-john-baptiste
+│   │   ├── michael-leung
+│   │   ├── mikey-morton
+│   │   ├── mikkel-dengse
+│   │   ├── milo-thompson
+│   │   ├── monique-pattison
+│   │   ├── monzo
+│   │   ├── monzo-business-team
+│   │   │   └── 2
+│   │   ├── monzo-design-and-research-team
+│   │   ├── moshe-raphaely
+│   │   ├── naji-esiri
+│   │   │   ├── 2
+│   │   │   └── 3
+│   │   ├── natalie-gil
+│   │   ├── natalie-ledward
+│   │   ├── natasha-vernier
+│   │   ├── neal-lathia
+│   │   ├── neil-mckeown
+│   │   ├── niamh-broderick
+│   │   ├── niamh-joyce
+│   │   ├── nicholas-robinson-wall
+│   │   ├── nick-ng
+│   │   ├── nigel-null
+│   │   ├── ofelia-botella
+│   │   ├── ole-mahrt
+│   │   ├── oliver-beattie
+│   │   ├── paul-blunden
+│   │   ├── paul-rippon
+│   │   ├── peggy-mcgregor
+│   │   │   ├── 2
+│   │   │   ├── 3
+│   │   │   └── 4
+│   │   ├── priscila-minks-zanuzzo
+│   │   ├── priyesh-patel
+│   │   ├── rebecca-wright
+│   │   ├── ria-patel
+│   │   ├── richard-cadman
+│   │   ├── richard-cook
+│   │   │   └── 2
+│   │   ├── richard-dingwall
+│   │   ├── rika
+│   │   ├── rob-knight
+│   │   ├── robin-bilgil
+│   │   ├── rochana-shrestha
+│   │   ├── rore-erica-okoh
+│   │   ├── roxy-alexander
+│   │   │   ├── 2
+│   │   │   ├── 3
+│   │   │   ├── 4
+│   │   │   └── 5
+│   │   ├── russell-smith
+│   │   ├── ryan-kilburn
+│   │   ├── ryan-simon
+│   │   ├── sally-lait
+│   │   ├── sam-watkin
+│   │   ├── sam-wood
+│   │   ├── samantha-davies
+│   │   ├── sarah-byng
+│   │   ├── sarah-mathews
+│   │   ├── saskia-liebenberg
+│   │   ├── sheona-vincent-kilbride
+│   │   ├── sheree-atcheson
+│   │   ├── sheri-farsani
+│   │   │   └── 2
+│   │   ├── shnay-chohan
+│   │   ├── shubheksha-jalan
+│   │   ├── simon-amor
+│   │   ├── simon-balmain
+│   │   ├── sophie-milton-white
+│   │   ├── stepchange
+│   │   ├── stuart-mcfadden
+│   │   ├── suhail-patel
+│   │   ├── tara-mansfield
+│   │   ├── tas-morfopoulos
+│   │   ├── taxscouts
+│   │   ├── team-monzo
+│   │   │   └── 2
+│   │   ├── theo-gibson
+│   │   ├── theo-windebank
+│   │   ├── thomas-george
+│   │   ├── thomas-miller
+│   │   ├── tim-platt
+│   │   ├── tim-radvan
+│   │   ├── tom-blomfield
+│   │   │   └── 2
+│   │   ├── tom-davies
+│   │   ├── tom-preston
+│   │   ├── tony-di-nucci
+│   │   ├── tristan-thomas
+│   │   │   ├── 2
+│   │   │   └── 3
+│   │   ├── ts-anil
+│   │   ├── valerio-magliulo
+│   │   ├── vuokko-aro
+│   │   ├── wayne-tsai
+│   │   ├── will-allen-mersh
+│   │   ├── will-bolam
+│   │   ├── will-sewell
+│   │   ├── will-stolerman
+│   │   ├── william-masters
+│   │   ├── xero
+│   │   ├── yehudi-asamoah
+│   │   ├── zainab-khan
+│   │   └── zander-brade
+│   ├── automated-billing-updater
+│   ├── balance-in-trends
+│   ├── banking-101
 │   ├── banking-and-regulation
-│   └── authors
-│       ├── jonas-huckestein
-│       ├── leah-templeman
-│       ├── richard-raybould
-│       ├── emma-northcott
-│       ├── valerio-magliulo
-│       ├── natasha-vernier
-│       ├── oliver-beattie
-│       ├── team-monzo
-│       ├── phil-hewinson
-│       ├── richard-dingwall
-│       ├── zander-brade
-│       ├── simon-balmain
-│       ├── tom-blomfield
-│       ├── priscila-minks-zanuzzo
-│       ├── james-nicholson
-│       ├── bailey-kursar
-│       ├── tristan-thomas
-│       ├── yehudi-asamoah
-│       ├── dimitri-masin
-│       ├── sam-michael
-│       ├── paul-rippon
-│       ├── kieran-leblanc
-│       ├── naji-esiri
-│       ├── jami-welch
-│       ├── daniel-chatfield
-│       ├── kavi-dhokia
-│       ├── andy-smart
-│       ├── dillon-van-auken
-│       ├── zainab-khan
-│       ├── emma-guy
-│       ├── tracy-abraham
-│       ├── josh-garnham
-│       ├── beth-toms
-│       ├── beatrice-borbon
-│       ├── nigel-
-│       ├── bobbi-nicholson
-│       ├── daniel-cannon
-│       ├── maria-campbell
-│       ├── venkat-srinivasan
-│       ├── gemma-rogers
-│       ├── stuart-mcfadden
-│       └── filipe-varela
-├── ethics
-├── cookies
-├── features
-│   └── android-pay
-├── download
-├── twitter
-├── docs
-├── terms
-│   ├── version-1-1
-│   └── version-1-2
-├── privacy-bank
-├── hotchip
-├── press
-├── ambassadors
-├── annual-report
-│   └── 2017
-├── static
-│   ├── images
-│   │   └── blog
-│   │       └── 2017-01-27-designing-mental-health-mind
-│   │           ├── 4-suggest@2x.png
-│   │           ├── 2-alert@2x.png
-│   │           ├── 3-contact@2x.png
-│   │           └── 1-review@2x.png
-│   └── docs
-│       ├── model-services-RFC.pdf
-│       └── annual-report-2017.pdf
-├── community
-├── help
+│   │   └── 2
+│   ├── behind-the-scenes-of-a-phishing-scam
+│   ├── bereavments-how-we-can-help-if-someone-with-a-monzo-account-dies
+│   ├── best-reactions-to-year-in-monzo
+│   ├── black-history-month-2020
+│   ├── black-history-month-2021
+│   ├── black-history-month-abram-lincoln-harris
+│   ├── borrowing
+│   ├── bringing-our-faster-payments-connection-in-house
+│   ├── budget-for-your-small-business
+│   ├── business-banking
+│   │   ├── 2
+│   │   ├── 3
+│   │   ├── a-guide-to-purchase-orders
+│   │   ├── business-bank-account
+│   │   ├── creating-a-business-plan
+│   │   ├── do-i-need-a-business-bank-account
+│   │   ├── fundraising-for-your-business
+│   │   ├── gross-profit-net-profit-and-profit-margins-what-are-they-how-to-calculate
+│   │   ├── how-to-get-unpaid-invoices-paid
+│   │   ├── how-to-start-a-business-in-the-uk
+│   │   ├── how-to-write-a-business-plan
+│   │   ├── what-is-an-invoice
+│   │   └── what-is-cashflow
+│   ├── business-basics
+│   │   └── 2
+│   ├── business-basics-social-media
+│   ├── buy-now-pay-later-schemes
+│   ├── card-scams
+│   ├── cash-stuffing-and-other-old-school-ways-to-save-money-with-monzo
+│   ├── cash-withdrawals-in-the-european-economic-area-eea-are-now-free
+│   ├── celebrating-black-history-month-2020
+│   ├── celebrating-one-year-of-monzo-business
+│   ├── community
+│   │   └── 2
+│   ├── controlling-outbound-traffic-from-kubernetes
+│   ├── coordinators-on-android-building-flows-quickly-with-reusable-screens
+│   ├── corona-virus-business-help
+│   ├── coronavirus
+│   │   └── 2
+│   ├── cost-of-a-baby
+│   ├── cost-of-living
+│   ├── cost-of-living-how-were-supporting
+│   ├── cost-of-living-how-were-supporting-you-and-your-business
+│   ├── cost-of-living-quick-update
+│   ├── credit-scores
+│   │   ├── check-your-score
+│   │   ├── credit-checks
+│   │   ├── how-to-improve-your-credit-score
+│   │   └── what-is-a-good-credit-score
+│   ├── current-account-guides
+│   │   ├── how-long-does-a-transfer-take
+│   │   ├── how-long-should-you-keep-bank-statements
+│   │   ├── how-much-can-you-withdraw-from-an-atm
+│   │   ├── monzo-fscs-protection
+│   │   ├── more-than-one-bank-account
+│   │   └── when-did-i-open-my-account
+│   ├── customer-support
+│   │   └── 2
+│   ├── data
+│   │   └── 2
+│   ├── dax-liniere-puzzle-factory-small-businesses-coronavirus
+│   ├── dear-monzo
+│   ├── dear-monzo-wheres-the-best-place-to-put-my-savings
+│   ├── debt-borrowing-money-making-repayments-coronavirus-stepchange
+│   ├── design
+│   │   └── 2
+│   ├── digital-cash-stuffing-with-monzo-pots-save-money
+│   ├── diversity-and-inclusion
+│   │   └── 2
+│   ├── dont-get-monzo
+│   ├── engineering-culture
+│   ├── engineering-management-at-monzo-technical-leadership-people-support
+│   ├── envelope-method-budgeting
+│   ├── everything-you-need-to-know-about-monzos-holographic-debit-card
+│   ├── extending-our-open-banking-gambling-block
+│   ├── financial-inclusion
+│   ├── first-three-months-product-designer
+│   ├── four-essential-monthly-tasks-for-every-small-business-owner
+│   ├── fraud
+│   │   └── 2
+│   ├── fraud-scam-text-or-email-about-coronavirus-from-the-government
+│   ├── gender-pay-gap-update-april-2020-and-april-2021
+│   ├── good-start-new-tax-year
+│   ├── government-support-start-ups-coronavirus
+│   ├── great-holidays-great-spending-memories
+│   ├── helping-friends-with-money-worries
+│   ├── hmrc-scam
+│   ├── holding-onto-improved-financial-habits
+│   ├── how-i-use-monzo
+│   │   └── 2
+│   ├── how-money-works
+│   │   ├── 10
+│   │   ├── 11
+│   │   ├── 12
+│   │   ├── 13
+│   │   ├── 2
+│   │   ├── 3
+│   │   ├── 4
+│   │   ├── 5
+│   │   ├── 6
+│   │   ├── 7
+│   │   ├── 8
+│   │   └── 9
+│   ├── how-monzos-gambling-block-and-self-exclusion-helped-me-beat-gambling-addiction-and-pay-off-debt
+│   ├── how-monzos-gambling-block-helped-me-beat-my-gambling-addiction-and-pay-off-my-debt
+│   ├── how-to-avoid-scams-about-coronavirus
+│   ├── how-to-check-if-a-websites-safe-before-you-shop-online
+│   ├── how-to-cope-with-coronavirus-if-youre-self-employed-according-to-other-self
+│   ├── how-to-get-a-loan-with-bad-credit
+│   ├── how-to-get-out-of-your-overdraft
+│   ├── how-to-get-support-if-youre-a-refugee-or-asylum-seeker-during-coronavirus
+│   ├── how-to-improve-your-credit-score
+│   ├── how-to-live-on-20-less-money-furlough
+│   ├── how-to-open-a-business-bank-account-with-just-your-phone
+│   ├── how-to-open-a-monzo-account
+│   ├── how-to-recognise-financial-abuse-and-get-support
+│   ├── how-to-save-money
+│   │   └── 2
+│   ├── how-to-save-money-as-you-run-walk-or-cycle
+│   ├── how-to-save-the-spare-change-with-round-ups
+│   ├── how-to-shop-online-safely-with-monzo
+│   ├── how-to-spot-a-bank-scam
+│   ├── how-to-successfully-run-your-own-design-input-sessions
+│   ├── how-to-support-local-businesses-coming-out-of-lockdown
+│   ├── how-we-moved-our-faster-payments-connection-in-house
+│   ├── how-we-protect-you
+│   │   └── 2
+│   ├── how-we-upgraded-3d-secure
+│   ├── how-weve-evolved-on-call-at-monzo
+│   ├── i-paid-off-gbp5k-debt-and-saved-gbp8k-for-my-dream-home-deposit
+│   ├── i-quit-smoking
+│   ├── i-started-my-dream-business-and-became-my-own-boss-during-the-pandemic
+│   ├── i-was-out-of-work-for-18-months
+│   ├── instant-access-savings-are-here
+│   ├── international-womens-day
+│   ├── introducing-feed-and-manage
+│   ├── introducing-monzo-plus
+│   ├── is-monzo-premium-worth-it
+│   ├── is-monzo-safe
+│   ├── lessons-from-implementing-progression-frameworks-at-scale
+│   ├── lets-talk-business
+│   │   ├── 2
+│   │   ├── 3
+│   │   ├── 4
+│   │   └── 5
+│   ├── loans-help
+│   │   ├── car-finance-option
+│   │   └── pay-off-credit-card
+│   ├── looking-for-a-budgeting-app-supercharge-your-savings-and-budget-better-with
+│   ├── make-your-side-hustle-your-main-hustle
+│   ├── manage-your-business-finances-during-coronavirus
+│   ├── managing-money-with-pets
+│   ├── managing-my-universal-credit-payments
+│   ├── marketing-team
+│   ├── mental-health
+│   │   └── 2
+│   ├── mental-health-coronavirus
+│   ├── migrating-vaults-storage-with-no-downtime
+│   ├── money-in-love
+│   │   └── 2
+│   ├── monzo-101
+│   │   ├── 2
+│   │   ├── 3
+│   │   └── 4
+│   ├── monzo-among-the-uks-most-recommended-brands-february-2020
+│   ├── monzo-business-banking
+│   ├── monzo-business-deborah
+│   ├── monzo-hq
+│   │   ├── 2
+│   │   ├── 3
+│   │   ├── 4
+│   │   ├── 5
+│   │   ├── 6
+│   │   ├── 7
+│   │   └── 8
+│   ├── monzo-in-2020-looking-back
+│   ├── monzo-is-the-uks-most-recommended-brand
+│   ├── monzo-me
+│   ├── monzo-parents
+│   ├── monzo-pots-amys-story
+│   ├── monzo-pots-for-pets-cats
+│   ├── monzo-pots-robs-story
+│   ├── monzo-premium
+│   ├── monzo-reports-to-all-credit-reference-agencies-cras-equifax-experian-transunion
+│   ├── monzo-us-blog
+│   │   ├── 2
+│   │   ├── 3
+│   │   ├── emergency-fund-pot
+│   │   ├── first-six-months-android-engineer-backend-engineer
+│   │   ├── frequently-asked-questions
+│   │   ├── get-paid-early
+│   │   ├── interviewing-at-monzo
+│   │   ├── joint-account-perks
+│   │   ├── joint-accounts-beta
+│   │   ├── joint-accounts-get-started
+│   │   ├── manage-multiple-bank-accounts
+│   │   ├── new-year-new-budget
+│   │   ├── salary-sorter
+│   │   ├── scheduled-payments
+│   │   ├── supporting-mental-health-and-wellbeing
+│   │   ├── tip-tracker
+│   │   ├── trends
+│   │   └── working-to-build-more-empathetic-workplace
+│   ├── more-people-switched-their-bank-accounts-to-monzo
+│   ├── my-income-halved-accountant-turned-freelance-yoga-teacher
+│   ├── new-bill-split-reminder
+│   ├── new-international-transfers
+│   ├── no-barriers-to-banking
+│   ├── o2-text-scam
+│   ├── open-palm-tech-donate
+│   ├── our-2020-diversity-and-inclusion-report
+│   ├── our-2021-diversity-and-inclusion-report
+│   ├── outsourcing-parts-of-your-business
+│   ├── partnerships
+│   ├── pay-on-card-from-a-pot
+│   ├── personal-details-are-compromised
+│   ├── pivot-your-business-online
+│   ├── plans-cancelled-because-of-coronavirus-find-out-if-you-can-get-your-money
+│   ├── police-impersonation-scam-phone-call
+│   ├── pots
+│   ├── pride-season-2020
+│   ├── product-management
+│   ├── product-updates
+│   │   ├── 10
+│   │   ├── 11
+│   │   ├── 2
+│   │   ├── 3
+│   │   ├── 4
+│   │   ├── 5
+│   │   ├── 6
+│   │   ├── 7
+│   │   ├── 8
+│   │   └── 9
+│   ├── protect-yourself-from-fraud-never-share-your-pin
+│   ├── quarterly-updates
+│   │   └── 2
+│   ├── rainy-day-fund-save-money-automatically-every-time-it-rains
+│   ├── relying-on-credit-to-get-by
+│   ├── research
+│   ├── research-findings-at-monzo
+│   ├── reverse-1p-savings-challenge-monzo
+│   ├── save-at-home
+│   ├── save-gbp667-95-a-year-with-the-1p-saving-challenge
+│   ├── save-money-when-you-tweet
+│   ├── saving-tips-from-year-in-monzo
+│   ├── savings-account-guides
+│   │   ├── how-to-save-money-for-a-house
+│   │   └── lump-sum-savings-account
+│   ├── scams-to-watch-out-for-when-youre-shopping-online-this-christmas
+│   ├── seven-steps-to-validate-your-business-idea
+│   ├── small-businesses-coronavirus
+│   ├── small-change
+│   ├── small-change-control
+│   ├── small-change-manage
+│   ├── small-change-save
+│   ├── spenders-guide-to-saving-money
+│   ├── spending-money-on-pets
+│   ├── staring-a-business-from-home-what-you-need-to-know
+│   ├── start-planning-your-business-again
+│   ├── stepchange-what-if-campaign
+│   ├── support-for-self-employed-coronavirus
+│   ├── support-gambling-self-exclusion
+│   ├── supporting-neurodiversity-at-monzo
+│   ├── take-on-the-spare-change-saving-challenge
+│   ├── targets-in-trends
+│   ├── tax-money-2019-general-election
+│   ├── team
+│   │   └── 2
+│   ├── tech-ops-hiring-monzo
+│   ├── technology
+│   │   ├── 2
+│   │   ├── 3
+│   │   ├── 4
+│   │   ├── 5
+│   │   └── 6
+│   ├── the-appg-for-gambling-harms-joins-the-call
+│   ├── the-extra-cost-of-being-a-woman
+│   ├── the-extra-costs-of-living-with-adhd
+│   ├── the-human-impact-of-late-payments-on-small-businesses
+│   ├── training-and-resources-to-help-you-make-your-organisation-more-inclusive
+│   ├── travelling-with-monzo
+│   ├── trending-spending
+│   ├── trends
+│   ├── upgrading-explained
+│   ├── we-built-network-isolation-for-1-500-services
+│   ├── we-secured-thousands-of-cassandra-clients-to-keep-monzos-data-safe
+│   ├── we-sent-our-house-deposit-to-a-fraudster-who-posed-as-our-lawyer
+│   ├── were-here-to-support-you-with-your-money-and-your-monzo-account-during-the
+│   ├── weve-had-a-little-makeover
+│   ├── weve-teamed-up-with-truelayer-team-up-to-protect-vulnerable-customers
+│   ├── what-if-im-stressed-about-debt
+│   ├── what-is-a-good-credit-score
+│   ├── what-is-cashflow
+│   ├── what-is-deinfluencing-tiktok-save-money
+│   ├── what-to-do-if-you-miss-a-loan-repayment
+│   ├── what-to-do-if-youre-worried-about-paying-rent-or-losing-your-home-because-of-coronavirus
+│   ├── what-to-look-for-in-your-first-employee
+│   ├── whats-new-in-monzo-october-2021
+│   ├── why-getting-paid-on-time-really-really-matters
+│   ├── why-having-more-than-one-bank-account-might-be-useful
+│   ├── why-you-should-run-design-input-sessions
+│   ├── withdrawal-and-card-delivery-fees
+│   ├── women-in-finance-charter-update
+│   ├── year-in-monzo-2019
+│   ├── year-in-monzo-2020
+│   ├── year-in-monzo-reactions
+│   ├── year-in-monzo-tweets
+│   ├── you-can-now-hide-your-pots-and-change-the-order-theyre-in
+│   ├── youll-be-able-to-make-contactless-payments-up-to-gbp100-to-make-paying-more
+│   ├── young-family-start-a-new-business
+│   └── your-questions-about-universal-credit-and-government-support-answered-by
+├── business
+├── c
+│   ├── community
+│   │   └── 19
+│   ├── customersupport
+│   │   └── 10
+│   ├── developers
+│   │   └── 43
+│   ├── feedback
+│   │   ├── 35
+│   │   └── done
+│   │       └── 80
+│   ├── financial-chat
+│   │   └── 36
+│   ├── foyer
+│   │   └── 24
+│   ├── making-monzo
+│   │   └── 39
+│   ├── monzo
+│   │   └── 5
+│   └── usa
+│       └── 46
+├── campaign
+│   └── banking-for-all
 ├── careers
-├── uni
-├── -play-store-redirect
-├── cdn-cgi
-│   └── l
-│       └── email-protection
+├── categories
+├── community
+│   └── making-monzo
+├── cookies
+├── current-account
+├── docs
+│   ├── annual-report-2017.pdf
+│   ├── annual-report-2018.pdf
+│   ├── annual-report-2019.pdf
+│   ├── monzo-annual-report-2020.pdf
+│   ├── monzo-annual-report-2021.pdf
+│   ├── monzo-annual-report-2022.pdf
+│   ├── monzo-crd-statement-2022.pdf
+│   ├── monzo-pillar-3-2021.pdf
+│   ├── monzo-pillar-3-2022.pdf
+│   ├── pillar_3_2018.pdf
+│   ├── pillar_3_2019.pdf
+│   └── pillar_3_2020.pdf
+├── documents
+│   ├── candidate-notice.pdf
+│   ├── engineering-manager-framework-v1-0.pdf
+│   ├── engineering-progression-framework-v2-0.pdf
+│   ├── naming.pdf
+│   ├── one_minute_guide_to_monzo_for_merchants.pdf
+│   └── refugee-coronavirus-support
+│       ├── amharic.pdf
+│       ├── arabic.pdf
+│       ├── polish.pdf
+│       ├── romanian.pdf
+│       ├── tigrinya.pdf
+│       └── vietnamese.pdf
+├── download
+├── ethics
+├── faq
+│   └── learn-more
+│       └── savings-glossary
+├── features
+│   ├── 16-plus
+│   ├── android-pay
+│   ├── apple-pay
+│   ├── energy-switching
+│   ├── get-paid-early
+│   ├── ifttt
+│   ├── joint-accounts
+│   ├── overdrafts
+│   ├── savings
+│   │   └── past-interest-rates
+│   ├── switch
+│   └── travel
+├── flex
+├── fraud
+├── guidelines
+├── help
+│   ├── account-and-profile
+│   │   ├── IFTTT-login
+│   │   ├── IFTTT-login-button-not-working
+│   │   ├── IFTTT-set-up
+│   │   ├── account-number2
+│   │   ├── account-selector
+│   │   ├── accountlimits
+│   │   ├── asked-to-update-details
+│   │   ├── bank-statement-how-to
+│   │   ├── branches
+│   │   ├── brexit-currency-impact
+│   │   ├── brexit-general-query
+│   │   ├── brexit-monzo-business-impact
+│   │   ├── close-account
+│   │   ├── closed-account-refund
+│   │   ├── labs-what-is
+│   │   ├── reopening-your-account
+│   │   ├── share-with-us
+│   │   ├── statement-of-fees-web
+│   │   ├── tax-residency-eu
+│   │   ├── tax-residency-us
+│   │   ├── understanding-fees
+│   │   ├── update-email
+│   │   ├── update-home-address
+│   │   ├── update-legal-name
+│   │   ├── update-phone-number
+│   │   ├── update-preferred-name
+│   │   ├── update-tax-residency
+│   │   ├── what-is-ifttt
+│   │   └── what-tax-status
+│   ├── app-help
+│   │   ├── adding-card-to-google-pay
+│   │   ├── apple-pay-activation-issues
+│   │   ├── apple-pay-devices
+│   │   ├── apple-pay-payment-limit
+│   │   ├── changing-notifications
+│   │   ├── contacting-support
+│   │   ├── duplicate-notifications-apple-pay
+│   │   ├── google-pay-activation-issues
+│   │   ├── google-pay-payment-limit
+│   │   ├── log-in-multiple-devices
+│   │   ├── logging-out
+│   │   ├── making-monzo-default-card-google-pay
+│   │   ├── monzo-default-apple-pay-card
+│   │   ├── remove-monzo-card-from-apple-pay
+│   │   ├── reporting-bugs
+│   │   ├── switch-on-dark-mode-web
+│   │   ├── turn-on-biometrics-face-fingerprint-id-web
+│   │   └── using-google-pay-card-frozen
+│   ├── budgeting-overdrafts-savings
+│   │   ├── add-withdraw-hidden-pots
+│   │   ├── archived-pots
+│   │   ├── create-pot-app
+│   │   ├── do-monzo-hold-money
+│   │   ├── getting-isa-on-joint-account
+│   │   ├── hide-pots
+│   │   ├── how-does-interest-work
+│   │   ├── how-does-the-summary-dial-work
+│   │   ├── how-to-close-or-archive-pots
+│   │   ├── how-to-close-pot
+│   │   ├── how-to-set-custom-dates-summary
+│   │   ├── how-to-set-payday
+│   │   ├── instant-access-pots-new
+│   │   ├── instant-access-savings-pots-web
+│   │   ├── interest-on-monzo-isas
+│   │   ├── is-protected
+│   │   ├── isas-and-moving-abroad
+│   │   ├── moving-money-to-from-pots
+│   │   ├── other-types-of-ISA
+│   │   ├── paying-tax-on-an-isa
+│   │   ├── pots-with-overdrafts
+│   │   ├── reorder-pots
+│   │   ├── round-up-app
+│   │   ├── summary-left-over
+│   │   ├── targets-in-trends-web
+│   │   ├── transferring-an-ISA-away-from-Monzo
+│   │   ├── transferring-an-ISA-to-Monzo
+│   │   ├── trends-custom-categories-web
+│   │   ├── trends-excluded-categories-web
+│   │   ├── trends-left-to-spend-web
+│   │   ├── trends-months-years-web
+│   │   ├── trends-spending-and-balance-web
+│   │   ├── trends-tab-connected-accounts
+│   │   ├── unlock-pot
+│   │   ├── web-bill-pots
+│   │   ├── web-salary-sorter
+│   │   ├── what-are-locked-pots
+│   │   ├── what-is-a-pot
+│   │   ├── what-is-left-to-spend
+│   │   ├── what-is-summary
+│   │   ├── what-trends-tab-web
+│   │   ├── when-is-interest-paid
+│   │   └── withdraw-savings-pot
+│   ├── business-accounts
+│   │   ├── Monzo-address
+│   │   ├── accounting-tool-not-synced
+│   │   ├── accounting-tools-duplicated-accounts
+│   │   ├── auto-export-business-transactions
+│   │   ├── balance-in-accounting-tools
+│   │   ├── business-account-access-rights
+│   │   ├── business-bank-statement
+│   │   ├── business-banking-update-registered-name-address-industry
+│   │   ├── business-getpaid-easybanktransfers
+│   │   ├── business-getpaid-fees
+│   │   ├── business-getpaid-paymentlinks-createandshare
+│   │   ├── business-getpaid-paymentlinks-invoices
+│   │   ├── business-getpaid-paymentlinks-managing
+│   │   ├── business-getpaid-stripe-signup
+│   │   ├── business-getpaid-stripecardpayments
+│   │   ├── business-verifying-persons-of-significant-control
+│   │   ├── business-web-features
+│   │   ├── business-web-payments
+│   │   ├── business-web-security
+│   │   ├── change-business-account-tier-web
+│   │   ├── cheque-how-to-pay-business
+│   │   ├── close-business-account
+│   │   ├── connect-to-freeagent
+│   │   ├── connect-to-quickbooks
+│   │   ├── connect-to-xero
+│   │   ├── disconnecting-accounting-tool-freeagent-xero
+│   │   ├── disconnecting-accounting-tool-quickbooks
+│   │   ├── expensify
+│   │   ├── export-receipts
+│   │   ├── funding-exchange
+│   │   ├── historic-transactions-in-accounting-tools
+│   │   ├── historical-transactions-accounting-tools
+│   │   ├── how-to-create-a-tax-pot
+│   │   ├── payments-from-pots-business-account
+│   │   ├── pots-in-accounting-tools
+│   │   ├── square
+│   │   ├── transaction-missing-from-accounting-tools
+│   │   ├── virtual-card-on-pot-dispute
+│   │   ├── virtual-card-on-pot-how-business-account
+│   │   ├── virtual-cards-how-business-banking
+│   │   ├── virtual-cards-limits-business-account
+│   │   ├── virtual-cards-multiple-team-members-business-account
+│   │   ├── virtual-cards-not-working-business-banking
+│   │   ├── virtual-cards-what-business-banking
+│   │   ├── virtul-cards-apple-google-pay-business-account
+│   │   ├── what-is-a-tax-pot
+│   │   ├── when-business-account-fees-are-charged
+│   │   ├── wise-cashback-business-banking
+│   │   ├── wise-cost-business-banking
+│   │   ├── wise-currency-business-banking-web
+│   │   ├── wise-limits-business-banking
+│   │   ├── wise-payment-status-business-banking
+│   │   ├── wise-receive-international-payments-business-banking
+│   │   ├── wise-send-business-banking
+│   │   └── wise-timescale-business-banking
+│   ├── business-accounts-signup
+│   │   ├── add-and-manage-members
+│   │   ├── business-account-getting-in-after-submitting-application
+│   │   ├── business-account-signup-no-personal-account
+│   │   ├── business-account-signup-start-on-web
+│   │   ├── business-banking-cass
+│   │   ├── business-card-delivery-address
+│   │   ├── business-verifying-persons-of-significant-control
+│   │   ├── business-verifying-persons-of-significant-control-at-sign-up
+│   │   ├── eligible-businesses
+│   │   ├── monzo-business-signup-existing-personal-account
+│   │   ├── multiple-business-accounts
+│   │   └── using-current-account-for-business
+│   ├── business-getpaid
+│   │   ├── business-getpaid-easybanktransfers
+│   │   ├── business-getpaid-fees
+│   │   ├── business-getpaid-paymentlinks-createandshare
+│   │   ├── business-getpaid-paymentlinks-invoices
+│   │   ├── business-getpaid-paymentlinks-managing
+│   │   ├── business-getpaid-stripe-signup
+│   │   └── business-getpaid-stripecardpayments
+│   ├── emergencies
+│   │   ├── account-blocked
+│   │   ├── dont-know-forgot-pin
+│   │   ├── found-monzo-card-web
+│   │   ├── lost-phone
+│   │   ├── monzo-card-blocked
+│   │   ├── monzo-card-lost-damaged-stolen
+│   │   ├── report-fraud
+│   │   └── take-out-cash-atm-locator
+│   ├── joint-accounts
+│   │   ├── close-joint-account-how-to
+│   │   ├── create-pot-app
+│   │   ├── create-pot-how-to
+│   │   ├── credit-score-joint-account
+│   │   ├── current-account-joint-account
+│   │   ├── types-account-switch
+│   │   └── what-joint-account
+│   ├── legal-stuff
+│   │   ├── branches
+│   │   ├── closed-account-bank-statement
+│   │   ├── data-subject-access-request
+│   │   ├── december-2020-fundraising
+│   │   ├── deposit-protection-fscs
+│   │   ├── information-facebook
+│   │   ├── information-sharing
+│   │   ├── legal-complaint-business-account-web
+│   │   ├── make-complaint-web
+│   │   ├── privacy-policy
+│   │   ├── selfie-during-signup
+│   │   ├── tax-residency-eu
+│   │   ├── tax-residency-not-uk
+│   │   ├── tax-residency-us
+│   │   ├── terms-conditions
+│   │   ├── update-tax-residency
+│   │   ├── us-subsidiary-gdpr
+│   │   ├── what-tax-status
+│   │   ├── whistleblowing
+│   │   ├── why-ask-for-tax-residency
+│   │   └── writing-to-legal-team
+│   ├── monzo-card-pin
+│   │   ├── a-new-card-is-coming-but-I-didn't-order-it
+│   │   ├── account-blocked
+│   │   ├── activating-your-card
+│   │   ├── can-I-get-my-expired-card-replacement-delivered-abroad
+│   │   ├── card-is-expiring-where-can-I-get-new-card-delivered
+│   │   ├── card-not-arrived
+│   │   ├── card-payment-declined-still-been-charged
+│   │   ├── contactless-not-working
+│   │   ├── does-support-3dsecure
+│   │   ├── dont-know-forgot-pin
+│   │   ├── expecting-refund-but-getting-a-new-card
+│   │   ├── freezing-defrosting
+│   │   ├── frozen-card-payment
+│   │   ├── how-to
+│   │   ├── how-to-find-your-monzo-card-details
+│   │   ├── i-want-second-card
+│   │   ├── international-card-delivery
+│   │   ├── is-it-credit-card
+│   │   ├── monzo-card-accepted-everywhere
+│   │   ├── monzo-card-blocked
+│   │   ├── monzo-card-lost-damaged-stolen
+│   │   ├── my-card-is-expiring-what-can-I-do-with-it
+│   │   ├── my-card-payment-declined
+│   │   ├── my-card-will-expire-soon
+│   │   ├── take-out-cash-atm-locator
+│   │   ├── update-delivery-address
+│   │   ├── want-to-change-pin
+│   │   ├── what-is-magstripe
+│   │   ├── when-will-my-new-card-arrive-following-old-card-expiry
+│   │   ├── why-are-my-contactless-card-payments-being-declined
+│   │   └── why-does-my-card-expire
+│   ├── monzo-flex
+│   │   ├── Changing-your-Flex-credit-limit
+│   │   ├── Choosing-an-instalment-plan
+│   │   ├── How-do-refunds-work-in-Flex
+│   │   ├── How-to-add-to-Apple-Pay-Google-Pay
+│   │   ├── Managing-your-money
+│   │   ├── Two-ways-to-flex
+│   │   ├── applying-for-monzo-flex-and-credit-scores
+│   │   ├── can-i-get-a-physical-flex-card
+│   │   ├── editing-monzo-flex-instalment-plans
+│   │   ├── eligible-transactions-for-monzo-flex
+│   │   ├── flexing-a-transaction
+│   │   ├── interest-rates-for-monzo-flex
+│   │   ├── missing-a-monzo-flex-payment
+│   │   ├── monzo-flex-and-section-75
+│   │   ├── monzo-flex-and-section-75-claims
+│   │   ├── monzo-flex-explained
+│   │   ├── paying-extra-towards-a-monzo-flex-instalment-plan
+│   │   ├── paying-online-using-your-virtual-Flex-card-details
+│   │   ├── what-does-a-default-mean-for-my-flex
+│   │   └── where-you-can-use-the-virtual-Flex-card
+│   ├── monzo-fraud-category
+│   │   ├── fraud-warnings
+│   │   ├── hmrc-scam
+│   │   ├── investment-scam
+│   │   ├── keep-your-account-safe
+│   │   ├── police-scam
+│   │   ├── product-service-scam
+│   │   ├── report-attempted-scam
+│   │   ├── report-scam
+│   │   ├── safe-account-scam
+│   │   ├── stay-safe-online
+│   │   ├── stay-safe-using-public-wifi
+│   │   ├── stay-safe-working-from-home
+│   │   └── two-factor-authentication
+│   ├── monzo-plus
+│   │   ├── advanced-budgeting-auto-exports
+│   │   ├── advanced-budgeting-custom-categories
+│   │   ├── advanced-budgeting-multiple-categories
+│   │   ├── advanced-budgeting-roundups
+│   │   ├── afford-plus-premium
+│   │   ├── connected-account-not-working
+│   │   ├── connected-accounts-privacy
+│   │   ├── connected-accounts-remove
+│   │   ├── connected-accounts-supported-banks
+│   │   ├── monzo-plus-benefits
+│   │   ├── monzo-plus-billing-date
+│   │   ├── monzo-plus-ineligible
+│   │   ├── monzo-plus-investor
+│   │   ├── paid-downgrade-premium
+│   │   ├── paid-interest
+│   │   ├── paid-upgrade-premium
+│   │   ├── plus-cancel
+│   │   ├── plus-connected-accounts
+│   │   ├── plus-credit-tracker
+│   │   ├── plus-fees
+│   │   ├── plus-joint-account
+│   │   ├── plus-offers
+│   │   ├── plus-signip
+│   │   ├── remove-credit-tracker
+│   │   ├── virtual-card-on-pot-dispute
+│   │   ├── virtual-card-on-pot-how
+│   │   ├── virtual-cards-how
+│   │   ├── virtual-cards-limits
+│   │   ├── virtual-cards-not-working
+│   │   ├── virtual-cards-what
+│   │   ├── virtul-cards-apple-google-pay
+│   │   ├── web-bill-pots
+│   │   └── web-credit-tracker-problem
+│   ├── monzo-premium
+│   │   ├── advanced-budgeting-auto-exports
+│   │   ├── advanced-budgeting-custom-categories
+│   │   ├── advanced-budgeting-multiple-categories
+│   │   ├── advanced-budgeting-roundups
+│   │   ├── afford-plus-premium
+│   │   ├── connected-account-not-working
+│   │   ├── connected-accounts-privacy
+│   │   ├── connected-accounts-remove
+│   │   ├── connected-accounts-supported-banks
+│   │   ├── how-to-airport-lounge
+│   │   ├── how-to-metal-card
+│   │   ├── metal-card-cleaning
+│   │   ├── paid-downgrade-premium
+│   │   ├── paid-interest
+│   │   ├── paid-upgrade-premium
+│   │   ├── plus-connected-accounts
+│   │   ├── plus-credit-tracker
+│   │   ├── premium-cancel
+│   │   ├── premium-fees
+│   │   ├── premium-phone-what
+│   │   ├── premium-travel-how-to-claim
+│   │   ├── remove-credit-tracker
+│   │   ├── travel-insurance-pre-existing
+│   │   ├── travel-insureance-pre-existing
+│   │   ├── virtual-card-on-pot-dispute
+│   │   ├── virtual-card-on-pot-how
+│   │   ├── virtual-cards-how
+│   │   ├── virtual-cards-limits
+│   │   ├── virtual-cards-not-working
+│   │   ├── virtual-cards-what
+│   │   ├── virtul-cards-apple-google-pay
+│   │   ├── web-bill-pots
+│   │   ├── web-credit-tracker-problem
+│   │   └── what-is-premium
+│   ├── monzo-with-friends
+│   │   ├── InboundpaymentsviaQR
+│   │   ├── block-someone-on-monzo
+│   │   ├── existinginvite-waiting-for-bonus
+│   │   ├── how-to-pay-someone
+│   │   ├── invite-to-monzo-web
+│   │   ├── invite-unavailable
+│   │   ├── monzo-me-how-to
+│   │   ├── nearby-friends-help
+│   │   ├── newsignup-waiting-for-bonus-web
+│   │   ├── sending-money-monzo-to-monzo
+│   │   ├── split-bill
+│   │   └── what-nearby-friends
+│   ├── opening-an-account
+│   │   ├── add-and-manage-members
+│   │   ├── business-account-getting-in-after-submitting-application
+│   │   ├── business-account-signup-no-personal-account
+│   │   ├── business-account-signup-start-on-web
+│   │   ├── business-banking-cass
+│   │   ├── business-card-delivery-address
+│   │   ├── business-verifying-persons-of-significant-control-at-sign-up
+│   │   ├── eligible-businesses
+│   │   ├── how-to-open-a-Monzo-Joint-Account
+│   │   ├── how-to-open-a-Monzo-Personal-Account
+│   │   ├── monzo-business-signup-existing-personal-account
+│   │   ├── multiple-business-accounts
+│   │   ├── using-current-account-for-business
+│   │   └── why-we-ask-for-a-video-when-you-open-a-monzo-account
+│   ├── overdrafts-loans
+│   │   ├── Managing-your-money
+│   │   ├── borrowing-more
+│   │   ├── change-overdraft-notifications
+│   │   ├── change-repaymentdate-loan
+│   │   ├── changing-overdraft-limit
+│   │   ├── consolidation-loans
+│   │   ├── early-payment-loan
+│   │   ├── eligiblity-loans
+│   │   ├── how-do-overdrafts-work
+│   │   ├── how-to-open-overdraft
+│   │   ├── keeping-an-inactive-overdraft-limit
+│   │   ├── lost-job
+│   │   ├── manage-overdraft-web
+│   │   ├── missing-payment-loan
+│   │   ├── nosia-snosia-payment-arrangement
+│   │   ├── notice-of-sums-in-arrears
+│   │   ├── notices-of-correction
+│   │   ├── overdrafts-credit-score
+│   │   ├── overdrafts-fees
+│   │   ├── switching-off-overdraft
+│   │   ├── turn-off-lending-offers
+│   │   ├── unauthorised-overdrafts
+│   │   └── what-is-an-overdraft
+│   ├── payments-getting-started
+│   │   ├── I_cant_withdraw_my_funds_from_FTX
+│   │   ├── InboundpaymentsviaQR
+│   │   ├── adding-card-to-google-pay
+│   │   ├── adding-money-to-account
+│   │   ├── apple-pay-activation-issues
+│   │   ├── apple-pay-devices
+│   │   ├── apple-pay-payment-limit
+│   │   ├── bank-holiday-delays-web
+│   │   ├── bank-transfer-how-to
+│   │   ├── binance-block-why
+│   │   ├── block-someone-on-monzo
+│   │   ├── cancel-direct-debit
+│   │   ├── card-not-accepted-paypoint
+│   │   ├── cash-deposit-how-to
+│   │   ├── cash-deposit-limit
+│   │   ├── cash-deposit-limit-why
+│   │   ├── cheque-foreign-currency
+│   │   ├── cheque-how-to-pay
+│   │   ├── coinbase-supported
+│   │   ├── cop-account-doesnt-match
+│   │   ├── cop-cant-check-account
+│   │   ├── cop-details-dont-match
+│   │   ├── cop-no-check
+│   │   ├── direct-debit-guarantee-what
+│   │   ├── direct-debit-set-up
+│   │   ├── duplicate-notifications-apple-pay
+│   │   ├── easy-bank-transfer-problem
+│   │   ├── easy-bank-transfers
+│   │   ├── easy-bank-transfers-not-supported
+│   │   ├── google-pay-activation-issues
+│   │   ├── google-pay-payment-limit
+│   │   ├── how-direct-debits-work
+│   │   ├── how-long-cheque-web
+│   │   ├── how-to-pay-someone
+│   │   ├── is-crypto-allowed
+│   │   ├── is-monzo-anti-crypto
+│   │   ├── making-monzo-default-card-google-pay
+│   │   ├── monzo-cheque-missing
+│   │   ├── monzo-crypto-friendly
+│   │   ├── monzo-default-apple-pay-card
+│   │   ├── monzo-me-how-to
+│   │   ├── moving-salary-to-monzo
+│   │   ├── nearby-friends-help
+│   │   ├── pay-with-monzo-cheque
+│   │   ├── payments-to-express-remit-not-available
+│   │   ├── payments-to-trade-excel-not-available
+│   │   ├── paypoint-fee-why
+│   │   ├── remove-monzo-card-from-apple-pay
+│   │   ├── sending-money-monzo-to-monzo
+│   │   ├── split-bill
+│   │   ├── standing-order-cancel
+│   │   ├── standing-order-set-up
+│   │   ├── using-google-pay-card-frozen
+│   │   └── what-nearby-friends
+│   ├── payments-paying-monzobusiness
+│   │   ├── paying-business-email
+│   │   ├── paying-business-fees
+│   │   ├── paying-business-no-account
+│   │   ├── paying-business-paymentlinks
+│   │   ├── paying-business-paynow
+│   │   ├── paying-business-protection
+│   │   ├── paying-business-receipt
+│   │   └── paying-easy-bank-transfer
+│   ├── payments-troubleshooting
+│   │   ├── 3ds-fail-online-payment
+│   │   ├── active-card-check-what
+│   │   ├── authorising-different-payments
+│   │   ├── balance-incorrect
+│   │   ├── card-payment-declined-still-been-charged
+│   │   ├── chargebacks-current-account
+│   │   ├── direct-debit-failed
+│   │   ├── dispute-process-explainer
+│   │   ├── frozen-card-payment
+│   │   ├── hsbc-bank-transfer
+│   │   ├── monzo-card-blocked
+│   │   ├── my-card-payment-declined
+│   │   ├── nearby-friends-help
+│   │   ├── offline-payments
+│   │   ├── pending-payment
+│   │   ├── refund-how-long
+│   │   ├── section-75-protection
+│   │   ├── standing-order-failed
+│   │   ├── transfer-not-arrived
+│   │   ├── unrecognised-payment-web
+│   │   └── why-are-my-contactless-card-payments-being-declined
+│   ├── service-quality-results
+│   │   └── service-quality-results
+│   ├── switching-to-monzo
+│   │   ├── cass-cancel-how-to
+│   │   ├── cass-full-switch-what
+│   │   ├── cass-status-update
+│   │   ├── cass-what
+│   │   ├── overdraft-cass
+│   │   └── reasons-to-switch
+│   ├── travelling
+│   │   ├── converting-balance-to-another-currency
+│   │   ├── fees-abroad
+│   │   ├── fees-charges-abroad
+│   │   ├── going-abroad
+│   │   ├── monzo-card-accepted-everywhere
+│   │   ├── reasons-travel-is-better-with-monzo
+│   │   ├── understanding-fees
+│   │   └── web-my-limits
+│   ├── web-logging-in-to-the-app
+│   │   ├── web-locked-out-app
+│   │   ├── web-loggin-error-message
+│   │   ├── web-login-email-not-received
+│   │   ├── web-login-email-not-working
+│   │   ├── web-login-icloud-issue
+│   │   └── web-remember-email-login-monzo
+│   └── your-needs
+│       ├── accessibility-needs
+│       ├── addiction
+│       ├── domestic-financial-abuse
+│       ├── mental-health
+│       └── unexpected-life-events
+├── hotchip
+├── i
+│   ├── accessibility
+│   ├── bills
+│   ├── business
+│   │   ├── business-savings
+│   │   ├── business-switch
+│   │   ├── eligibility
+│   │   ├── features
+│   │   │   ├── 24-7-customer-support
+│   │   │   ├── integrated-accounting
+│   │   │   ├── invoices
+│   │   │   ├── mobile-and-web-access
+│   │   │   ├── multi-user-access
+│   │   │   ├── tax-pots
+│   │   │   └── xero-offer
+│   │   ├── get-paid
+│   │   ├── help
+│   │   ├── how-to-open-a-monzo-business-account
+│   │   ├── sign-up-for-business
+│   │   └── testimonials
+│   ├── coronavirus-and-your-insurance
+│   ├── coronavirus-faq
+│   ├── coronavirus-update
+│   ├── current-account
+│   ├── ecb-rates
+│   ├── fraud
+│   ├── gambling-block
+│   ├── helping-everyone-belong-at-monzo
+│   ├── loans
+│   │   ├── car-loans
+│   │   └── home-improvement-loans
+│   ├── money-worries
+│   ├── monzo-account
+│   ├── monzo-plus
+│   │   ├── fiit
+│   │   ├── naked-wines
+│   │   └── patch
+│   ├── monzo-premium
+│   │   └── worldwide-family-travel-insurance
+│   ├── our-business-practices
+│   ├── our-social-programme
+│   ├── overdraft-calculator
+│   ├── overdrafts
+│   ├── pay-a-monzo-business
+│   ├── plus
+│   ├── pots
+│   ├── protecting-the-environment
+│   │   └── carbon-removals
+│   ├── refer-a-friend
+│   ├── salary-sorter
+│   ├── savingwithmonzo
+│   ├── security
+│   ├── share-with-us
+│   ├── shared-tabs-more
+│   ├── supporting-all-our-customers
+│   ├── supporting-customers
+│   ├── supporting-customers-signposting
+│   ├── switch
+│   └── the-future-of-monzo
+├── information-about-business-current-account-services
+├── information-about-current-account-services
+├── internal-product
+├── invest
+├── investor-information
+│   └── internal-audit-charter
+├── isa
+├── legal
+│   ├── audio
+│   │   ├── apr-2023-terms-conditions-audio-2-3.mp3
+│   │   ├── dec-2021-terms-conditions-audio.mp3
+│   │   ├── jan-2020-terms-conditions-audio.mp3
+│   │   ├── mar-2021-terms-conditions-audio.mp3
+│   │   ├── may-2019-terms-conditions-audio.m4a
+│   │   ├── nov-2019-terms-conditions-audio.mp3
+│   │   └── sep-2020-terms-conditions-audio.mp3
+│   ├── browser-support-policy
+│   ├── business-account-fee-information
+│   │   ├── version-1-1
+│   │   ├── version-1-2
+│   │   ├── version-1-3
+│   │   ├── version-1-4
+│   │   └── version-1-5
+│   ├── business-account-fscs-information
+│   │   ├── version-1-2
+│   │   └── version-1-3
+│   ├── business-account-privacy-notice
+│   │   ├── version-1-1
+│   │   ├── version-1-2
+│   │   ├── version-1-3
+│   │   ├── version-1-4
+│   │   └── version-1-5
+│   ├── business-account-privacy-policy
+│   ├── business-account-terms-and-conditions
+│   │   ├── version-1-1
+│   │   ├── version-1-2
+│   │   ├── version-1-3
+│   │   ├── version-1-4
+│   │   ├── version-1-5
+│   │   ├── version-1-6
+│   │   ├── version-1-7
+│   │   ├── version-1-8
+│   │   └── version-1-9
+│   ├── cashback-on-your-loan
+│   │   ├── version-1-0
+│   │   └── version-1-1
+│   ├── complaints-data
+│   ├── cookie-notice
+│   │   └── version-1-3
+│   ├── cookies
+│   ├── decisions-using-open-banking
+│   │   ├── privacy-notice
+│   │   └── terms-and-conditions
+│   │       ├── version-1-0
+│   │       └── version-1-1
+│   ├── fee-information
+│   │   ├── fee-glossary.pdf
+│   │   ├── version-1-0
+│   │   ├── version-1-1
+│   │   ├── version-1-2
+│   │   ├── version-1-3
+│   │   ├── version-1-4
+│   │   └── version-1-5
+│   ├── files
+│   │   ├── business-account-fee-information
+│   │   │   ├── fee-glossary.pdf
+│   │   │   ├── fee-information-1-5.pdf
+│   │   │   └── fee-information.pdf
+│   │   ├── decisions-using-open-banking
+│   │   │   └── terms-and-conditions
+│   │   │       ├── version-1-0.pdf
+│   │   │       └── version-1-1.pdf
+│   │   ├── fee-information
+│   │   │   ├── fee-glossary.pdf
+│   │   │   ├── version-1-0
+│   │   │   │   ├── fee-glossary.pdf
+│   │   │   │   └── fee-information.pdf
+│   │   │   ├── version-1-1
+│   │   │   │   └── fee-information-1.1.pdf
+│   │   │   ├── version-1-2
+│   │   │   │   └── fee-information-1.2.pdf
+│   │   │   ├── version-1-3
+│   │   │   │   └── fee-information-1.3.pdf
+│   │   │   ├── version-1-4
+│   │   │   │   └── fee-information-1.4.pdf
+│   │   │   └── version-1-5
+│   │   │       └── fee-information-1.5.pdf
+│   │   ├── fscs-information
+│   │   │   ├── fscs-information-1.1.pdf
+│   │   │   ├── fscs-information-1.2.pdf
+│   │   │   └── fscs-information-1.3.pdf
+│   │   ├── loan-information
+│   │   │   └── loan-information-1.0.pdf
+│   │   ├── overdraft-information
+│   │   │   ├── overdraft-information-1.0.pdf
+│   │   │   ├── overdraft-information-1.1.pdf
+│   │   │   └── overdraft-information-1.2.pdf
+│   │   ├── plus
+│   │   │   ├── monzo-plus-credit-tracker-terms-and-conditions.pdf
+│   │   │   ├── monzo-plus-fee-information-1.0.pdf
+│   │   │   ├── monzo-plus-fee-information-1.1.pdf
+│   │   │   ├── monzo-plus-fee-information-1.2.pdf
+│   │   │   ├── monzo-plus-fee-information-1.3.pdf
+│   │   │   ├── monzo-plus-other-accounts-in-monzo-terms-and-conditions
+│   │   │   │   ├── version-1-0.pdf
+│   │   │   │   └── version-1-2.pdf
+│   │   │   ├── monzo-plus-savings-summary-1.1.pdf
+│   │   │   ├── monzo-plus-savings-summary-1.2.pdf
+│   │   │   ├── monzo-plus-savings-summary.pdf
+│   │   │   ├── monzo-plus-terms-and-conditions-1.0.pdf
+│   │   │   ├── monzo-plus-terms-and-conditions-1.1.pdf
+│   │   │   ├── monzo-plus-terms-and-conditions-1.2.pdf
+│   │   │   ├── monzo-plus-terms-and-conditions-1.3.pdf
+│   │   │   └── monzo-plus-terms-and-conditions-1.4.pdf
+│   │   ├── premium
+│   │   │   ├── monzo-premium-assurant-terms-and-conditions.pdf
+│   │   │   ├── monzo-premium-axa-ipid-v2.pdf
+│   │   │   ├── monzo-premium-axa-terms-and-conditions-v2.pdf
+│   │   │   ├── monzo-premium-axa-terms-and-conditions.pdf
+│   │   │   ├── monzo-premium-fee-information-1.1.pdf
+│   │   │   ├── monzo-premium-fee-information-1.2.pdf
+│   │   │   ├── monzo-premium-savings-summary-1.1.pdf
+│   │   │   ├── monzo-premium-savings-summary-1.2.pdf
+│   │   │   ├── monzo-premium-terms-and-conditions-1.2.pdf
+│   │   │   ├── monzo-premium-terms-and-conditions-1.3.pdf
+│   │   │   ├── monzo-premium-terms-and-conditions-1.4.pdf
+│   │   │   └── monzo-premium-terms-and-conditions-1.5.pdf
+│   │   ├── referral-scheme
+│   │   │   ├── monzo-referral-scheme-1.0.pdf
+│   │   │   ├── monzo-referral-scheme-2.0.pdf
+│   │   │   └── monzo-referral-scheme-3.0.pdf
+│   │   └── terms-and-conditions
+│   │       ├── monzo-terms-and-conditions-1.7.pdf
+│   │       ├── monzo-terms-and-conditions-1.8.pdf
+│   │       ├── monzo-terms-and-conditions-1.9.pdf
+│   │       ├── monzo-terms-and-conditions-2.0.pdf
+│   │       ├── monzo-terms-and-conditions-2.1.pdf
+│   │       ├── monzo-terms-and-conditions-2.2.pdf
+│   │       └── monzo-terms-and-conditions-2.3.pdf
+│   ├── fscs-information
+│   │   ├── version-1-1
+│   │   ├── version-1-2
+│   │   └── version-1-3
+│   ├── help
+│   │   └── legal-stuff
+│   │       └── privacy-policy
+│   ├── january-2022-campaign
+│   │   └── terms-and-conditions
+│   │       └── version-1-0
+│   ├── loan-information
+│   │   └── version-1-0
+│   ├── mobile-operating-system-support-policy
+│   ├── overdraft-information
+│   │   ├── version-1-0
+│   │   ├── version-1-1
+│   │   └── version-1-2
+│   ├── plus
+│   │   ├── credit-tracker-privacy-notice
+│   │   ├── credit-tracker-terms-and-conditions
+│   │   │   └── version-1-0
+│   │   ├── fee-information
+│   │   │   ├── version-1-0
+│   │   │   ├── version-1-1
+│   │   │   ├── version-1-2
+│   │   │   └── version-1-3
+│   │   ├── other-accounts-in-monzo-privacy-notice
+│   │   ├── other-accounts-in-monzo-terms-and-conditions
+│   │   │   ├── version-1-0
+│   │   │   ├── version-1-1
+│   │   │   └── version-1-2
+│   │   ├── savings-summary
+│   │   │   ├── version-1-0
+│   │   │   ├── version-1-1
+│   │   │   └── version-1-2
+│   │   └── terms-and-conditions
+│   │       ├── version-1-0
+│   │       ├── version-1-1
+│   │       ├── version-1-2
+│   │       ├── version-1-3
+│   │       └── version-1-4
+│   ├── premium
+│   │   ├── fee-information
+│   │   │   ├── version-1-0
+│   │   │   ├── version-1-1
+│   │   │   └── version-1-2
+│   │   ├── savings-summary
+│   │   │   ├── version-1-0
+│   │   │   ├── version-1-1
+│   │   │   └── version-1-2
+│   │   └── terms-and-conditions
+│   │       ├── version-1-1
+│   │       ├── version-1-2
+│   │       ├── version-1-3
+│   │       ├── version-1-4
+│   │       └── version-1-5
+│   ├── privacy-bank
+│   ├── privacy-notice
+│   │   ├── version-1-1
+│   │   ├── version-1-10
+│   │   ├── version-1-11
+│   │   ├── version-1-12
+│   │   ├── version-1-2
+│   │   ├── version-1-3
+│   │   ├── version-1-4
+│   │   ├── version-1-5
+│   │   ├── version-1-6
+│   │   ├── version-1-7
+│   │   ├── version-1-8
+│   │   └── version-1-9
+│   ├── privacy-policy
+│   ├── referral-scheme
+│   │   └── terms-and-conditions
+│   │       ├── version-1-0
+│   │       ├── version-2-0
+│   │       └── version-3-0
+│   ├── remaining-balance-terms-and-conditions
+│   │   └── version-1-0
+│   ├── tax-strategy
+│   └── terms-and-conditions
+│       ├── overdraft-charges-monthly-cap
+│       │   └── version-1-0
+│       ├── version-1-1
+│       ├── version-1-2
+│       ├── version-1-3
+│       ├── version-1-4
+│       ├── version-1-5
+│       ├── version-1-6
+│       ├── version-1-7
+│       ├── version-1-8
+│       ├── version-1-9
+│       ├── version-2-0
+│       ├── version-2-1
+│       ├── version-2-2
+│       └── version-2-3
+├── loans
+├── modern-slavery-statements
+├── money-worries
+├── our-social-programme
+├── plus
+├── pots
+├── press
+├── privacy
+├── privacy-bank
+├── refer-a-friend
+├── savingwithmonzo
+├── service-information
+├── service-quality-results
+├── shared-tabs-more
+├── static
+│   ├── docs
+│   │   ├── Monzo-Mental-Health-Poster.pdf
+│   │   ├── annual-report-2017.pdf
+│   │   ├── annual-report-2018.pdf
+│   │   ├── annual-report-2019.pdf
+│   │   ├── model-services-RFC.pdf
+│   │   ├── modern-slavery-statement
+│   │   │   ├── modern-slavery-statement-2020.pdf
+│   │   │   ├── modern-slavery-statement-2021.pdf
+│   │   │   └── modern-slavery-statement-2022.pdf
+│   │   ├── monzo-annual-report-2020.pdf
+│   │   ├── monzo-annual-report-2021.pdf
+│   │   ├── monzo-annual-report-2022.pdf
+│   │   ├── monzo-pillar-3-2021.pdf
+│   │   ├── monzo-pillar-3-2022.pdf
+│   │   ├── premium
+│   │   │   ├── monzo-premium-assurant-ipid.pdf
+│   │   │   ├── monzo-premium-assurant-terms-and-conditions.pdf
+│   │   │   └── monzo-premium-axa-terms-and-conditions.pdf
+│   │   └── redacted-root-certificate-authorities-ceremony-3-script.pdf
+│   └── images
+│       └── blog
+│           ├── 2016-08-25-monzo
+│           │   └── hoodie.jpg
+│           └── 2017-01-27-designing-mental-health-mind
+│               ├── 1-review@2x.png
+│               ├── 2-alert@2x.png
+│               ├── 3-contact@2x.png
+│               └── 4-suggest@2x.png
+├── supporting-all-our-customers
+├── switch
+├── terms
+├── tone-of-voice
+├── tos
 ├── transparency
-└── fscs-information
-    └── www.fscs.org.uk
+├── us
+│   └── careers
+└── usa
+    ├── careers
+    └── joint-account
 

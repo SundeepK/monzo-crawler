@@ -4,20 +4,20 @@ import com.monzo.crawler.domain.Node;
 import com.monzo.crawler.sitemap.SiteMap;
 import com.monzo.crawler.sitemap.SiteMapGenerator;
 import com.monzo.crawler.sitemap.SiteMapGeneratorFactory;
-import okhttp3.HttpUrl;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.net.URL;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static org.mockito.Matchers.any;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-@RunWith(MockitoJUnitRunner.class)
+@ExtendWith(MockitoExtension.class)
 public class SiteMapTest {
 
     @Mock
@@ -28,7 +28,7 @@ public class SiteMapTest {
 
     private SiteMap underTest;
 
-    @Before
+    @BeforeEach
     public void setUp(){
         when(siteMapGeneratorFactory.createSiteMapGenerator(any(Node.class))).thenReturn(siteMapGenerator);
         underTest = new SiteMap(siteMapGeneratorFactory, "monzo");
@@ -36,7 +36,7 @@ public class SiteMapTest {
 
     @Test
     public void testItHandlesRoot() throws Exception {
-        HttpUrl url1 = HttpUrl.parse("https://monzo.com/");
+        URL url1 = new URL("https://monzo.com/");
 
         underTest.add(url1);
         Node expectedRoot = new Node("monzo", map());
@@ -47,11 +47,11 @@ public class SiteMapTest {
 
     @Test
     public void testItCreatesSiteMap() throws Exception {
-        HttpUrl url1 = HttpUrl.parse("https://monzo.com/about/");
-        HttpUrl url2 = HttpUrl.parse("https://monzo.com/contact/");
-        HttpUrl url3 = HttpUrl.parse("https://monzo.com/blog/2017/12/07/pots-android/");
-        HttpUrl url4 = HttpUrl.parse("https://monzo.com/contact/subcontact/page1");
-        HttpUrl url5 = HttpUrl.parse("https://monzo.com/contact/subcontact/page2");
+        URL url1 = new URL("https://monzo.com/about/");
+        URL url2 = new URL("https://monzo.com/contact/");
+        URL url3 = new URL("https://monzo.com/blog/2017/12/07/pots-android/");
+        URL url4 = new URL("https://monzo.com/contact/subcontact/page1");
+        URL url5 = new URL("https://monzo.com/contact/subcontact/page2");
 
         underTest.add(url1);
         underTest.add(url2);

@@ -2,19 +2,20 @@ package com.monzo.crawler;
 
 import com.monzo.crawler.domain.Node;
 import com.monzo.crawler.sitemap.SiteMapGenerator;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.LinkedHashMap;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class SiteMapGeneratorTest {
 
     @Test
-    public void testItPrintsEmptyWhenNull() throws IOException {
+    public void testItPrintsEmptyWhenNull() {
         String siteMap = new SiteMapGenerator(null).getSiteMap();
         assertEquals("", siteMap);
     }
